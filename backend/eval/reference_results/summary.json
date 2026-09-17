@@ -1,0 +1,23 @@
+{
+  "frames_scored": 24,
+  "excluded_sources": [],
+  "classes": {
+    "tractor": 7,
+    "trailer": 6,
+    "truck": 6,
+    "truck_light": 5
+  },
+  "detector_alone_correct": "6/24",
+  "leave_one_frame_out": {
+    "correct": "20/24",
+    "wrong": 1,
+    "abstained": 3,
+    "accuracy_when_answering": 0.952
+  },
+  "leave_one_machine_out": {
+    "correct": "20/24",
+    "wrong": 1,
+    "abstained": 3,
+    "accuracy_when_answering": 0.952
+  }
+}

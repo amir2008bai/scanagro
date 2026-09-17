@@ -1,0 +1,10 @@
+{
+  "images": 25,
+  "plates_detected": 21,
+  "plates_read": 7,
+  "plate_crops_saved": 40,
+  "completed": 25,
+  "failed": 0,
+  "mock_images": 0,
+  "detections": 38
+}

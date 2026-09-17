@@ -1,0 +1,46 @@
+{
+  "_about": {
+    "purpose": "Machine-type labels for the main vehicle in each supplied frame. Used both to seed the reference gallery and to score it.",
+    "method": "Each frame's largest confident vehicle box was cropped and inspected by hand. Labels describe what is visible in that crop, not what the whole frame contains.",
+    "vocabulary": {
+      "tractor": "Wheeled agricultural tractor: Kirovets K-700/K-701, MTZ/Belarus and similar.",
+      "truck": "Heavy cab-over lorry, three or more axles: KAMAZ, MAZ, MAN.",
+      "truck_light": "Light bonneted lorry: GAZ, ZIL and similar.",
+      "trailer": "Towed body photographed without its tractor unit in the crop."
+    },
+    "caveat": "Front and rear views of the same class look nothing alike to an image encoder. The seed gallery covers both views only thinly; a depot archive is what fills that in.",
+    "excluded": "Frame 9 is deliberately unlabelled: the crop shows a rusty tipper body from behind and could be a truck or a trailer. Guessing it would poison both classes."
+  },
+  "frames": {
+    "1":  {"vehicle_type": "truck",       "view": "front_quarter", "note": "KAMAZ dump, white cab, orange body"},
+    "2":  {"vehicle_type": "truck_light", "view": "front_quarter", "note": "GAZ, blue"},
+    "3":  {"vehicle_type": "truck",       "view": "front_quarter", "note": "KAMAZ, white cab, grain body"},
+    "4":  {"vehicle_type": "trailer",     "view": "rear",          "note": "Tandem grain trailer, tan sides"},
+    "5":  {"vehicle_type": "tractor",     "view": "front",         "note": "Kirovets K-700, red"},
+    "6":  {"vehicle_type": "tractor",     "view": "front_quarter", "note": "Blue tractor with front loader"},
+    "7":  {"vehicle_type": "tractor",     "view": "side",          "note": "MTZ/Belarus, blue, with trailer"},
+    "8":  {"vehicle_type": "truck_light", "view": "rear",          "note": "GAZ flatbed loaded with grain"},
+    "10": {"vehicle_type": "truck",       "view": "front_quarter", "note": "MAZ, white cab"},
+    "11": {"vehicle_type": "truck_light", "view": "front_quarter", "note": "GAZ, pale blue"},
+    "12": {"vehicle_type": "trailer",     "view": "rear_quarter",  "note": "Grey grain trailer, MAN tailgate"},
+    "13": {"vehicle_type": "truck_light", "view": "rear",          "note": "GAZ rear, timber-sided body"},
+    "14": {"vehicle_type": "trailer",     "view": "rear",          "note": "Orange trailer, two-row plate"},
+    "15": {"vehicle_type": "tractor",     "view": "front_quarter", "note": "Kirovets, red"},
+    "16": {"vehicle_type": "tractor",     "view": "side",          "note": "Tractor with trailer, distant"},
+    "17": {"vehicle_type": "trailer",     "view": "rear",          "note": "Grey trailer, yellow plate"},
+    "18": {"vehicle_type": "truck",       "view": "front_quarter", "note": "MAZ, white cab"},
+    "19": {"vehicle_type": "truck",       "view": "front_quarter", "note": "KAMAZ, red cab, STAYER lettering"},
+    "20": {"vehicle_type": "truck_light", "view": "front_quarter", "note": "GAZ, green"},
+    "21": {"vehicle_type": "trailer",     "view": "rear_quarter",  "note": "Rusty drop-side trailer"},
+    "22": {"vehicle_type": "trailer",     "view": "rear",          "note": "Grey trailer, red tarpaulin"},
+    "23": {"vehicle_type": "tractor",     "view": "front_quarter", "note": "Kirovets K-701, yellow"},
+    "24": {"vehicle_type": "tractor",     "view": "front_quarter", "note": "Tractor, weathered green"},
+    "25": {"vehicle_type": "truck",       "view": "front_quarter", "note": "KAMAZ, white cab, grain body"}
+  },
+  "same_machine_groups": [
+    ["8", "20"],
+    ["2", "13"],
+    ["5", "15"]
+  ],
+  "_groups_note": "Frames believed to show the same physical machine. 8 and 20 share plate 597 A?? 10. The other two pairs are a visual judgement. Leave-one-frame-out scoring still leaks across these pairs, so the stricter leave-one-machine-out figure is the one to trust."
+}

@@ -1,0 +1,794 @@
+[
+  {
+    "frame": "1",
+    "expected": "truck",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": null,
+    "leave_frame_out_reason": "classes_too_close",
+    "leave_frame_out_similarity": 0.7326,
+    "leave_machine_out": null,
+    "leave_machine_out_reason": "classes_too_close",
+    "leave_machine_out_similarity": 0.7326,
+    "neighbours": [
+      {
+        "reference": "A_J_A_Smith_Transport_2005_Foden_truck_with_tipper_trailer__9_February_2009.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.7326
+      },
+      {
+        "reference": "MAZ_5337.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.7242
+      },
+      {
+        "reference": "KamAZ_dump_truck_in_Belarus_1.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.7117
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "2",
+    "expected": "truck_light",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": null,
+    "leave_frame_out_reason": "below_similarity_floor",
+    "leave_frame_out_similarity": 0.5849,
+    "leave_machine_out": null,
+    "leave_machine_out_reason": "below_similarity_floor",
+    "leave_machine_out_similarity": 0.5849,
+    "neighbours": [
+      {
+        "reference": "GAZ-53-12_Soviet_Truck_in_Ukraine.jpg",
+        "vehicle_type": "truck_light",
+        "source": "web",
+        "similarity": 0.5849
+      },
+      {
+        "reference": "GAZ-52_or_GAZ-53_truck_in_Mongolia.jpg",
+        "vehicle_type": "truck_light",
+        "source": "web",
+        "similarity": 0.5761
+      },
+      {
+        "reference": "ZiL-130_truck_2013_G1.jpg",
+        "vehicle_type": "truck_light",
+        "source": "web",
+        "similarity": 0.531
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "3",
+    "expected": "truck",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": null,
+    "leave_frame_out_reason": "classes_too_close",
+    "leave_frame_out_similarity": 0.7073,
+    "leave_machine_out": null,
+    "leave_machine_out_reason": "classes_too_close",
+    "leave_machine_out_similarity": 0.7073,
+    "neighbours": [
+      {
+        "reference": "MAZ_5337.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.729
+      },
+      {
+        "reference": "2000_Foden_truck_with_tipper_trailer__3_February_2009.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.7073
+      },
+      {
+        "reference": "A_J_A_Smith_Transport_2005_Foden_truck_with_tipper_trailer__9_February_2009.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.6437
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "4",
+    "expected": "trailer",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "truck",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.6907,
+    "leave_machine_out": "truck",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.6907,
+    "neighbours": [
+      {
+        "reference": "Dump_truck__Sabir__P1090306_.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.6907
+      },
+      {
+        "reference": "KamAZ_dump_truck_in_Belarus_1.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.5866
+      },
+      {
+        "reference": "KamAZ-6520_dump_truck_in_Moscow.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.584
+      }
+    ],
+    "view": "rear"
+  },
+  {
+    "frame": "5",
+    "expected": "tractor",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": null,
+    "leave_frame_out_reason": "classes_too_close",
+    "leave_frame_out_similarity": 0.7548,
+    "leave_machine_out": null,
+    "leave_machine_out_reason": "classes_too_close",
+    "leave_machine_out_similarity": 0.7548,
+    "neighbours": [
+      {
+        "reference": "Belarus-82_in_Korolyov__1_.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.7548
+      },
+      {
+        "reference": "CATERPILLAR_950_GC_Wheel_Loader_01.jpg",
+        "vehicle_type": "wheel_loader",
+        "source": "web",
+        "similarity": 0.7399
+      },
+      {
+        "reference": "John_Deere_7600_tractor_-_geograph.org.uk_-_5675800.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.7198
+      }
+    ],
+    "view": "front"
+  },
+  {
+    "frame": "6",
+    "expected": "tractor",
+    "coco_label": "train",
+    "detector_type": "truck",
+    "leave_frame_out": "tractor",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.762,
+    "leave_machine_out": "tractor",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.762,
+    "neighbours": [
+      {
+        "reference": "Belarus-82_in_Korolyov__1_.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.762
+      },
+      {
+        "reference": "John_Deere_7600_tractor_-_geograph.org.uk_-_5675800.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.7315
+      },
+      {
+        "reference": "John_Deere_2140_Tractor_-_geograph.org.uk_-_1265731.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.6833
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "7",
+    "expected": "tractor",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "tractor",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.8222,
+    "leave_machine_out": "tractor",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.8222,
+    "neighbours": [
+      {
+        "reference": "Belarus-82_in_Korolyov__1_.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.8222
+      },
+      {
+        "reference": "CATERPILLAR_950_GC_Wheel_Loader_01.jpg",
+        "vehicle_type": "wheel_loader",
+        "source": "web",
+        "similarity": 0.7361
+      },
+      {
+        "reference": "John_Deere_7600_tractor_-_geograph.org.uk_-_5675800.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.6917
+      }
+    ],
+    "view": "side"
+  },
+  {
+    "frame": "8",
+    "expected": "truck_light",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": null,
+    "leave_frame_out_reason": "below_similarity_floor",
+    "leave_frame_out_similarity": 0.6001,
+    "leave_machine_out": null,
+    "leave_machine_out_reason": "below_similarity_floor",
+    "leave_machine_out_similarity": 0.6001,
+    "neighbours": [
+      {
+        "reference": "Dump_truck__Sabir__P1090306_.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.6001
+      },
+      {
+        "reference": "2000_Foden_truck_with_tipper_trailer__3_February_2009.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.4315
+      },
+      {
+        "reference": "KamAZ-6520_dump_truck_in_Moscow.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.4015
+      }
+    ],
+    "view": "rear"
+  },
+  {
+    "frame": "10",
+    "expected": "truck",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "trailer",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.8198,
+    "leave_machine_out": "trailer",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.8198,
+    "neighbours": [
+      {
+        "reference": "2000_Foden_truck_with_tipper_trailer__3_February_2009.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.8198
+      },
+      {
+        "reference": "MAZ_5337.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.769
+      },
+      {
+        "reference": "2003_DAF_XF_truck_with_tipper_trailer__3_February_2009.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.7523
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "11",
+    "expected": "truck_light",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "truck_light",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.79,
+    "leave_machine_out": "truck_light",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.79,
+    "neighbours": [
+      {
+        "reference": "GAZ-52_or_GAZ-53_truck_in_Mongolia.jpg",
+        "vehicle_type": "truck_light",
+        "source": "web",
+        "similarity": 0.79
+      },
+      {
+        "reference": "GAZ-53-12_Soviet_Truck_in_Ukraine.jpg",
+        "vehicle_type": "truck_light",
+        "source": "web",
+        "similarity": 0.7634
+      },
+      {
+        "reference": "GAZ-53-12_bread_truck.jpg",
+        "vehicle_type": "truck_light",
+        "source": "web",
+        "similarity": 0.7032
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "12",
+    "expected": "trailer",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": null,
+    "leave_frame_out_reason": "below_similarity_floor",
+    "leave_frame_out_similarity": 0.5534,
+    "leave_machine_out": null,
+    "leave_machine_out_reason": "below_similarity_floor",
+    "leave_machine_out_similarity": 0.5534,
+    "neighbours": [
+      {
+        "reference": "KamAZ-6520_dump_truck_in_Moscow.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.5534
+      },
+      {
+        "reference": "2000_Foden_truck_with_tipper_trailer__3_February_2009.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.5374
+      },
+      {
+        "reference": "Dump_truck__Sabir__P1090306_.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.5187
+      }
+    ],
+    "view": "rear_quarter"
+  },
+  {
+    "frame": "13",
+    "expected": "truck_light",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": null,
+    "leave_frame_out_reason": "below_similarity_floor",
+    "leave_frame_out_similarity": 0.5869,
+    "leave_machine_out": null,
+    "leave_machine_out_reason": "below_similarity_floor",
+    "leave_machine_out_similarity": 0.5869,
+    "neighbours": [
+      {
+        "reference": "Dump_truck__Sabir__P1090306_.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.5869
+      },
+      {
+        "reference": "KamAZ_dump_truck_in_Belarus_1.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.454
+      },
+      {
+        "reference": "2003_DAF_XF_truck_with_tipper_trailer__3_February_2009.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.419
+      }
+    ],
+    "view": "rear"
+  },
+  {
+    "frame": "14",
+    "expected": "trailer",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": null,
+    "leave_frame_out_reason": "below_similarity_floor",
+    "leave_frame_out_similarity": 0.5096,
+    "leave_machine_out": null,
+    "leave_machine_out_reason": "below_similarity_floor",
+    "leave_machine_out_similarity": 0.5096,
+    "neighbours": [
+      {
+        "reference": "KamAZ_dump_truck_in_Belarus_1.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.5096
+      },
+      {
+        "reference": "Dump_truck__Sabir__P1090306_.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.5083
+      },
+      {
+        "reference": "KamAZ-6520_dump_truck_in_Moscow.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.4981
+      }
+    ],
+    "view": "rear"
+  },
+  {
+    "frame": "15",
+    "expected": "tractor",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": null,
+    "leave_frame_out_reason": "classes_too_close",
+    "leave_frame_out_similarity": 0.7634,
+    "leave_machine_out": null,
+    "leave_machine_out_reason": "classes_too_close",
+    "leave_machine_out_similarity": 0.7634,
+    "neighbours": [
+      {
+        "reference": "Belarus-82_in_Korolyov__1_.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.7634
+      },
+      {
+        "reference": "CATERPILLAR_950_GC_Wheel_Loader_01.jpg",
+        "vehicle_type": "wheel_loader",
+        "source": "web",
+        "similarity": 0.7515
+      },
+      {
+        "reference": "John_Deere_7600_tractor_-_geograph.org.uk_-_5675800.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.7302
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "16",
+    "expected": "tractor",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "tractor",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.6434,
+    "leave_machine_out": "tractor",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.6434,
+    "neighbours": [
+      {
+        "reference": "John_Deere_6120M_Tractor_-_geograph.org.uk_-_7614699.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.6434
+      },
+      {
+        "reference": "John_Deere_2140_Tractor_-_geograph.org.uk_-_1265731.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.6234
+      },
+      {
+        "reference": "John_Deere_7600_tractor_-_geograph.org.uk_-_5675800.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.5868
+      }
+    ],
+    "view": "side"
+  },
+  {
+    "frame": "17",
+    "expected": "trailer",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": null,
+    "leave_frame_out_reason": "below_similarity_floor",
+    "leave_frame_out_similarity": 0.4241,
+    "leave_machine_out": null,
+    "leave_machine_out_reason": "below_similarity_floor",
+    "leave_machine_out_similarity": 0.4241,
+    "neighbours": [
+      {
+        "reference": "Dump_truck__Sabir__P1090306_.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.4241
+      },
+      {
+        "reference": "Chaser_bin.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.3777
+      },
+      {
+        "reference": "42T_-_53000L_Grainking_Titan_II_Chaser_Bin_-_Green.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.3721
+      }
+    ],
+    "view": "rear"
+  },
+  {
+    "frame": "18",
+    "expected": "truck",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": null,
+    "leave_frame_out_reason": "classes_too_close",
+    "leave_frame_out_similarity": 0.7913,
+    "leave_machine_out": null,
+    "leave_machine_out_reason": "classes_too_close",
+    "leave_machine_out_similarity": 0.7913,
+    "neighbours": [
+      {
+        "reference": "2000_Foden_truck_with_tipper_trailer__3_February_2009.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.7913
+      },
+      {
+        "reference": "MAZ_5337.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.764
+      },
+      {
+        "reference": "2003_DAF_XF_truck_with_tipper_trailer__3_February_2009.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.706
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "19",
+    "expected": "truck",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "trailer",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.7569,
+    "leave_machine_out": "trailer",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.7569,
+    "neighbours": [
+      {
+        "reference": "A_J_A_Smith_Transport_2005_Foden_truck_with_tipper_trailer__9_February_2009.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.7569
+      },
+      {
+        "reference": "2003_DAF_XF_truck_with_tipper_trailer__3_February_2009.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.7364
+      },
+      {
+        "reference": "KamAZ_dump_truck_in_Belarus_1.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.6928
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "20",
+    "expected": "truck_light",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "truck_light",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.6951,
+    "leave_machine_out": "truck_light",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.6951,
+    "neighbours": [
+      {
+        "reference": "GAZ-53-12_bread_truck.jpg",
+        "vehicle_type": "truck_light",
+        "source": "web",
+        "similarity": 0.6951
+      },
+      {
+        "reference": "GAZ-52_or_GAZ-53_truck_in_Mongolia.jpg",
+        "vehicle_type": "truck_light",
+        "source": "web",
+        "similarity": 0.6927
+      },
+      {
+        "reference": "ZiL-130_truck_2013_G1.jpg",
+        "vehicle_type": "truck_light",
+        "source": "web",
+        "similarity": 0.6897
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "21",
+    "expected": "trailer",
+    "coco_label": "train",
+    "detector_type": "truck",
+    "leave_frame_out": "truck",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.6335,
+    "leave_machine_out": "truck",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.6335,
+    "neighbours": [
+      {
+        "reference": "Dump_truck__Sabir__P1090306_.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.6335
+      },
+      {
+        "reference": "42T_-_53000L_Grainking_Titan_II_Chaser_Bin_-_Green.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.5182
+      },
+      {
+        "reference": "KamAZ-6520_dump_truck_in_Moscow.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.489
+      }
+    ],
+    "view": "rear_quarter"
+  },
+  {
+    "frame": "22",
+    "expected": "trailer",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": null,
+    "leave_frame_out_reason": "below_similarity_floor",
+    "leave_frame_out_similarity": 0.6078,
+    "leave_machine_out": null,
+    "leave_machine_out_reason": "below_similarity_floor",
+    "leave_machine_out_similarity": 0.6078,
+    "neighbours": [
+      {
+        "reference": "Dump_truck__Sabir__P1090306_.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.6078
+      },
+      {
+        "reference": "KamAZ-6520_dump_truck_in_Moscow.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.5375
+      },
+      {
+        "reference": "2000_Foden_truck_with_tipper_trailer__3_February_2009.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.5363
+      }
+    ],
+    "view": "rear"
+  },
+  {
+    "frame": "23",
+    "expected": "tractor",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "tractor",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.8147,
+    "leave_machine_out": "tractor",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.8147,
+    "neighbours": [
+      {
+        "reference": "K-700_II.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.8147
+      },
+      {
+        "reference": "K-700.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.7811
+      },
+      {
+        "reference": "CATERPILLAR_950_GC_Wheel_Loader_01.jpg",
+        "vehicle_type": "wheel_loader",
+        "source": "web",
+        "similarity": 0.7076
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "24",
+    "expected": "tractor",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": null,
+    "leave_frame_out_reason": "classes_too_close",
+    "leave_frame_out_similarity": 0.6352,
+    "leave_machine_out": null,
+    "leave_machine_out_reason": "classes_too_close",
+    "leave_machine_out_similarity": 0.6352,
+    "neighbours": [
+      {
+        "reference": "John_Deere_7600_tractor_-_geograph.org.uk_-_5675800.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.6352
+      },
+      {
+        "reference": "A_combine_harvester_-_geograph.org.uk_-_896319.jpg",
+        "vehicle_type": "combine_harvester",
+        "source": "web",
+        "similarity": 0.6272
+      },
+      {
+        "reference": "Belarus-82_in_Korolyov__1_.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.6205
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "25",
+    "expected": "truck",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": null,
+    "leave_frame_out_reason": "classes_too_close",
+    "leave_frame_out_similarity": 0.7894,
+    "leave_machine_out": null,
+    "leave_machine_out_reason": "classes_too_close",
+    "leave_machine_out_similarity": 0.7894,
+    "neighbours": [
+      {
+        "reference": "MAZ_5337.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.8245
+      },
+      {
+        "reference": "2000_Foden_truck_with_tipper_trailer__3_February_2009.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.7894
+      },
+      {
+        "reference": "A_J_A_Smith_Transport_2005_Foden_truck_with_tipper_trailer__9_February_2009.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.7411
+      }
+    ],
+    "view": "front_quarter"
+  }
+]

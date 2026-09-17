@@ -1,0 +1,131 @@
+{
+  "directory": "C:\\Users\\Amir\\Desktop\\scanagro\\work\\photos",
+  "api": "http://localhost:8000/api/v1",
+  "images": [
+    {
+      "source": "1.jpg",
+      "image_id": "e985d4e5-94e4-448c-b07e-f6f065927066",
+      "job_id": "7ee34518-9fc2-47de-adba-922a2239d36f"
+    },
+    {
+      "source": "10.jpg",
+      "image_id": "ddfafd80-0d08-43bd-9fd2-3c4a078a4eff",
+      "job_id": "4167f27f-0f42-457d-90c3-203bc0708252"
+    },
+    {
+      "source": "11.jpg",
+      "image_id": "01cc0dd2-eee5-4503-9ffe-64e69665811f",
+      "job_id": "022d39c9-46e3-417d-b439-89d5459df7cb"
+    },
+    {
+      "source": "12.jpg",
+      "image_id": "bd25573d-4806-4ec5-a5f1-2600f86046d3",
+      "job_id": "dd5f2e02-b9a9-4a66-bce4-26d57544f8d5"
+    },
+    {
+      "source": "13.jpg",
+      "image_id": "a2a5c2ba-db50-4996-b352-1530ecc31763",
+      "job_id": "d9b1a8ef-da99-4105-88d7-f86fda23f3b6"
+    },
+    {
+      "source": "14.jpg",
+      "image_id": "4b9319f1-a1ff-4e10-8249-6798e656e0f6",
+      "job_id": "b27aced6-be91-4446-a43b-9867cc4fd246"
+    },
+    {
+      "source": "15.jpg",
+      "image_id": "4b4268f6-54b3-4cb8-8d65-d9747de3bcb5",
+      "job_id": "cca240aa-9cbf-4150-95d8-c60f7fbd8f6a"
+    },
+    {
+      "source": "16 (1).jpg",
+      "image_id": "ba21b4cf-00a8-4d34-bc21-9ea31c61d26d",
+      "job_id": "4d068ead-939c-4813-a26b-b18df6770e31"
+    },
+    {
+      "source": "17.jpg",
+      "image_id": "93c06670-f4bc-49df-9b6b-d0bf4fb52994",
+      "job_id": "78592ced-3335-4058-afb4-3b742f3c6532"
+    },
+    {
+      "source": "18.jpg",
+      "image_id": "cb9c31c9-ea8a-4b92-9749-830c1c7bd3e8",
+      "job_id": "d8810cbd-1a09-4489-8bfb-031c98d41759"
+    },
+    {
+      "source": "19.jpg",
+      "image_id": "867a8954-e137-4953-962f-34aa1735e831",
+      "job_id": "80392f48-2d81-401f-8988-8ef634132212"
+    },
+    {
+      "source": "2.jpg",
+      "image_id": "209ff447-766b-4bb4-ac6c-3bdb6a98d975",
+      "job_id": "69f01953-fd87-4c41-8c6e-248659d5dc0b"
+    },
+    {
+      "source": "20.jpg",
+      "image_id": "54bb0cbf-745d-4e6a-b519-6465083917ab",
+      "job_id": "92595779-18bb-4b52-afe6-80390c13afff"
+    },
+    {
+      "source": "21.jpg",
+      "image_id": "8e56b348-fe9a-49b5-80e7-1680cedea189",
+      "job_id": "ed4eba57-2bcb-4a19-8454-edb27ac6b2b3"
+    },
+    {
+      "source": "22.jpg",
+      "image_id": "3ef7423b-2957-4b7b-bf5e-c248a145b826",
+      "job_id": "dd96db44-890d-4d8c-9b53-7df02dad512b"
+    },
+    {
+      "source": "23.jpg",
+      "image_id": "ccbface5-d6b3-425d-be39-0210f5491c40",
+      "job_id": "bf009a08-40a5-4446-85d2-fdd498e52a15"
+    },
+    {
+      "source": "24.jpg",
+      "image_id": "b6ff38e8-3d25-4e73-8723-55b0628b76fc",
+      "job_id": "049c94dd-e629-45d8-bafa-a8e803e3d1ac"
+    },
+    {
+      "source": "25.jpg",
+      "image_id": "453fcfe1-5e1c-4e0b-b34e-906cf040edb3",
+      "job_id": "188f3340-65c4-4feb-bc74-626daf903ad4"
+    },
+    {
+      "source": "3.jpg",
+      "image_id": "79a0f96f-1fc0-4fa6-bca7-73f80afe001b",
+      "job_id": "6a4cf000-c221-4821-983a-c3c1be12aa7f"
+    },
+    {
+      "source": "4.jpg",
+      "image_id": "f1b2eb90-fd54-438d-b4bd-fe6176598a9e",
+      "job_id": "ef7fed18-6cc2-4811-8aac-bc5f5f95faa4"
+    },
+    {
+      "source": "5.jpg",
+      "image_id": "9730fb4c-e4d3-462e-a240-079a5a34c4c5",
+      "job_id": "bcf5aa3e-5ee4-4c57-b8dc-bb8b8193e59a"
+    },
+    {
+      "source": "6.jpg",
+      "image_id": "742bd2f8-73fc-4472-94c4-263652e0af86",
+      "job_id": "ca5d5872-5fa9-46a7-8036-4a274d208c4b"
+    },
+    {
+      "source": "7.jpg",
+      "image_id": "5d2aae7a-6fef-4fae-9ac2-dfd0cc91ce23",
+      "job_id": "b168fd8f-c532-44b1-bb39-6dfa0f3ddd90"
+    },
+    {
+      "source": "8.jpg",
+      "image_id": "dc8ebcc3-b170-4d37-a2c1-2625222a9643",
+      "job_id": "82e15cac-3b5f-4b4f-b710-81f1c510c949"
+    },
+    {
+      "source": "9.jpg",
+      "image_id": "fc321808-37c4-414c-b6b3-9f946d1e7776",
+      "job_id": "9f5db225-f7b1-4a3d-875e-b0287107f2cf"
+    }
+  ]
+}

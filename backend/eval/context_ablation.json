@@ -1,0 +1,866 @@
+[
+  {
+    "mode": "tight",
+    "frame": "1",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8625,
+    "margin": 0.8625
+  },
+  {
+    "mode": "tight",
+    "frame": "2",
+    "expected": "truck_light",
+    "predicted": "truck_light",
+    "reason": "accepted",
+    "similarity": 0.7491,
+    "margin": 0.7491
+  },
+  {
+    "mode": "tight",
+    "frame": "3",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.898,
+    "margin": 0.898
+  },
+  {
+    "mode": "tight",
+    "frame": "4",
+    "expected": "trailer",
+    "predicted": null,
+    "reason": "classes_too_close",
+    "similarity": 0.7119,
+    "margin": 0.0048
+  },
+  {
+    "mode": "tight",
+    "frame": "5",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.8048,
+    "margin": 0.8048
+  },
+  {
+    "mode": "tight",
+    "frame": "6",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.7963,
+    "margin": 0.7963
+  },
+  {
+    "mode": "tight",
+    "frame": "7",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.8222,
+    "margin": 0.8222
+  },
+  {
+    "mode": "tight",
+    "frame": "8",
+    "expected": "truck_light",
+    "predicted": null,
+    "reason": "classes_too_close",
+    "similarity": 0.6968,
+    "margin": -0.058
+  },
+  {
+    "mode": "tight",
+    "frame": "10",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.9071,
+    "margin": 0.0873
+  },
+  {
+    "mode": "tight",
+    "frame": "11",
+    "expected": "truck_light",
+    "predicted": "truck_light",
+    "reason": "accepted",
+    "similarity": 0.7939,
+    "margin": 0.7939
+  },
+  {
+    "mode": "tight",
+    "frame": "12",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.7549,
+    "margin": 0.1274
+  },
+  {
+    "mode": "tight",
+    "frame": "13",
+    "expected": "truck_light",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.7668,
+    "margin": 0.0421
+  },
+  {
+    "mode": "tight",
+    "frame": "14",
+    "expected": "trailer",
+    "predicted": null,
+    "reason": "classes_too_close",
+    "similarity": 0.6991,
+    "margin": -0.0651
+  },
+  {
+    "mode": "tight",
+    "frame": "15",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.8013,
+    "margin": 0.0498
+  },
+  {
+    "mode": "tight",
+    "frame": "16",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.7012,
+    "margin": 0.7012
+  },
+  {
+    "mode": "tight",
+    "frame": "17",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.6834,
+    "margin": 0.0909
+  },
+  {
+    "mode": "tight",
+    "frame": "18",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.9121,
+    "margin": 0.1208
+  },
+  {
+    "mode": "tight",
+    "frame": "19",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8274,
+    "margin": 0.0705
+  },
+  {
+    "mode": "tight",
+    "frame": "20",
+    "expected": "truck_light",
+    "predicted": "truck_light",
+    "reason": "accepted",
+    "similarity": 0.8067,
+    "margin": 0.8067
+  },
+  {
+    "mode": "tight",
+    "frame": "21",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.74,
+    "margin": 0.0931
+  },
+  {
+    "mode": "tight",
+    "frame": "22",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.7691,
+    "margin": 0.0709
+  },
+  {
+    "mode": "tight",
+    "frame": "23",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.8147,
+    "margin": 0.1071
+  },
+  {
+    "mode": "tight",
+    "frame": "24",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.7637,
+    "margin": 0.7637
+  },
+  {
+    "mode": "tight",
+    "frame": "25",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.9021,
+    "margin": 0.9021
+  },
+  {
+    "mode": "context_query",
+    "frame": "1",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8301,
+    "margin": 0.8301
+  },
+  {
+    "mode": "context_query",
+    "frame": "2",
+    "expected": "truck_light",
+    "predicted": "truck_light",
+    "reason": "accepted",
+    "similarity": 0.6901,
+    "margin": 0.1581
+  },
+  {
+    "mode": "context_query",
+    "frame": "3",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8287,
+    "margin": 0.8287
+  },
+  {
+    "mode": "context_query",
+    "frame": "4",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.6838,
+    "margin": 0.051
+  },
+  {
+    "mode": "context_query",
+    "frame": "5",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.7752,
+    "margin": 0.7752
+  },
+  {
+    "mode": "context_query",
+    "frame": "6",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.7652,
+    "margin": 0.7652
+  },
+  {
+    "mode": "context_query",
+    "frame": "7",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.8059,
+    "margin": 0.8059
+  },
+  {
+    "mode": "context_query",
+    "frame": "8",
+    "expected": "truck_light",
+    "predicted": null,
+    "reason": "below_similarity_floor",
+    "similarity": 0.5893,
+    "margin": -0.0986
+  },
+  {
+    "mode": "context_query",
+    "frame": "10",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8674,
+    "margin": 0.0619
+  },
+  {
+    "mode": "context_query",
+    "frame": "11",
+    "expected": "truck_light",
+    "predicted": "truck_light",
+    "reason": "accepted",
+    "similarity": 0.7638,
+    "margin": 0.7638
+  },
+  {
+    "mode": "context_query",
+    "frame": "12",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.757,
+    "margin": 0.1028
+  },
+  {
+    "mode": "context_query",
+    "frame": "13",
+    "expected": "truck_light",
+    "predicted": null,
+    "reason": "classes_too_close",
+    "similarity": 0.7242,
+    "margin": -0.0084
+  },
+  {
+    "mode": "context_query",
+    "frame": "14",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.6577,
+    "margin": 0.0962
+  },
+  {
+    "mode": "context_query",
+    "frame": "15",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.791,
+    "margin": 0.0404
+  },
+  {
+    "mode": "context_query",
+    "frame": "16",
+    "expected": "tractor",
+    "predicted": null,
+    "reason": "below_similarity_floor",
+    "similarity": 0.6,
+    "margin": 0.6
+  },
+  {
+    "mode": "context_query",
+    "frame": "17",
+    "expected": "trailer",
+    "predicted": null,
+    "reason": "below_similarity_floor",
+    "similarity": 0.5868,
+    "margin": 0.0696
+  },
+  {
+    "mode": "context_query",
+    "frame": "18",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.867,
+    "margin": 0.0763
+  },
+  {
+    "mode": "context_query",
+    "frame": "19",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8279,
+    "margin": 0.0888
+  },
+  {
+    "mode": "context_query",
+    "frame": "20",
+    "expected": "truck_light",
+    "predicted": "truck_light",
+    "reason": "accepted",
+    "similarity": 0.7315,
+    "margin": 0.7315
+  },
+  {
+    "mode": "context_query",
+    "frame": "21",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.672,
+    "margin": 0.072
+  },
+  {
+    "mode": "context_query",
+    "frame": "22",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.7586,
+    "margin": 0.1425
+  },
+  {
+    "mode": "context_query",
+    "frame": "23",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.7709,
+    "margin": 0.0926
+  },
+  {
+    "mode": "context_query",
+    "frame": "24",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.7584,
+    "margin": 0.7584
+  },
+  {
+    "mode": "context_query",
+    "frame": "25",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8672,
+    "margin": 0.0896
+  },
+  {
+    "mode": "context_both",
+    "frame": "1",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8508,
+    "margin": 0.8508
+  },
+  {
+    "mode": "context_both",
+    "frame": "2",
+    "expected": "truck_light",
+    "predicted": "truck_light",
+    "reason": "accepted",
+    "similarity": 0.7532,
+    "margin": 0.189
+  },
+  {
+    "mode": "context_both",
+    "frame": "3",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8544,
+    "margin": 0.8544
+  },
+  {
+    "mode": "context_both",
+    "frame": "4",
+    "expected": "trailer",
+    "predicted": null,
+    "reason": "classes_too_close",
+    "similarity": 0.6743,
+    "margin": -0.0128
+  },
+  {
+    "mode": "context_both",
+    "frame": "5",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.7903,
+    "margin": 0.7903
+  },
+  {
+    "mode": "context_both",
+    "frame": "6",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.8114,
+    "margin": 0.8114
+  },
+  {
+    "mode": "context_both",
+    "frame": "7",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.8114,
+    "margin": 0.8114
+  },
+  {
+    "mode": "context_both",
+    "frame": "8",
+    "expected": "truck_light",
+    "predicted": null,
+    "reason": "classes_too_close",
+    "similarity": 0.6213,
+    "margin": -0.085
+  },
+  {
+    "mode": "context_both",
+    "frame": "10",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8614,
+    "margin": 0.0559
+  },
+  {
+    "mode": "context_both",
+    "frame": "11",
+    "expected": "truck_light",
+    "predicted": "truck_light",
+    "reason": "accepted",
+    "similarity": 0.7638,
+    "margin": 0.7638
+  },
+  {
+    "mode": "context_both",
+    "frame": "12",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.7582,
+    "margin": 0.1802
+  },
+  {
+    "mode": "context_both",
+    "frame": "13",
+    "expected": "truck_light",
+    "predicted": null,
+    "reason": "classes_too_close",
+    "similarity": 0.6872,
+    "margin": -0.019
+  },
+  {
+    "mode": "context_both",
+    "frame": "14",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.668,
+    "margin": 0.1269
+  },
+  {
+    "mode": "context_both",
+    "frame": "15",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.7977,
+    "margin": 0.0471
+  },
+  {
+    "mode": "context_both",
+    "frame": "16",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.6287,
+    "margin": 0.6287
+  },
+  {
+    "mode": "context_both",
+    "frame": "17",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.668,
+    "margin": 0.1083
+  },
+  {
+    "mode": "context_both",
+    "frame": "18",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8738,
+    "margin": 0.083
+  },
+  {
+    "mode": "context_both",
+    "frame": "19",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8263,
+    "margin": 0.0871
+  },
+  {
+    "mode": "context_both",
+    "frame": "20",
+    "expected": "truck_light",
+    "predicted": "truck_light",
+    "reason": "accepted",
+    "similarity": 0.7484,
+    "margin": 0.7484
+  },
+  {
+    "mode": "context_both",
+    "frame": "21",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.7362,
+    "margin": 0.1149
+  },
+  {
+    "mode": "context_both",
+    "frame": "22",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.7582,
+    "margin": 0.1687
+  },
+  {
+    "mode": "context_both",
+    "frame": "23",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.7709,
+    "margin": 0.0926
+  },
+  {
+    "mode": "context_both",
+    "frame": "24",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.7505,
+    "margin": 0.7505
+  },
+  {
+    "mode": "context_both",
+    "frame": "25",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8738,
+    "margin": 0.8738
+  },
+  {
+    "mode": "dual",
+    "frame": "1",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8566,
+    "margin": 0.8566
+  },
+  {
+    "mode": "dual",
+    "frame": "2",
+    "expected": "truck_light",
+    "predicted": "truck_light",
+    "reason": "accepted",
+    "similarity": 0.7488,
+    "margin": 0.2125
+  },
+  {
+    "mode": "dual",
+    "frame": "3",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8762,
+    "margin": 0.8762
+  },
+  {
+    "mode": "dual",
+    "frame": "4",
+    "expected": "trailer",
+    "predicted": null,
+    "reason": "classes_too_close",
+    "similarity": 0.6829,
+    "margin": -0.0143
+  },
+  {
+    "mode": "dual",
+    "frame": "5",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.7911,
+    "margin": 0.7911
+  },
+  {
+    "mode": "dual",
+    "frame": "6",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.8039,
+    "margin": 0.8039
+  },
+  {
+    "mode": "dual",
+    "frame": "7",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.8122,
+    "margin": 0.8122
+  },
+  {
+    "mode": "dual",
+    "frame": "8",
+    "expected": "truck_light",
+    "predicted": null,
+    "reason": "classes_too_close",
+    "similarity": 0.6429,
+    "margin": -0.0876
+  },
+  {
+    "mode": "dual",
+    "frame": "10",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8842,
+    "margin": 0.0716
+  },
+  {
+    "mode": "dual",
+    "frame": "11",
+    "expected": "truck_light",
+    "predicted": "truck_light",
+    "reason": "accepted",
+    "similarity": 0.7707,
+    "margin": 0.7707
+  },
+  {
+    "mode": "dual",
+    "frame": "12",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.7566,
+    "margin": 0.1564
+  },
+  {
+    "mode": "dual",
+    "frame": "13",
+    "expected": "truck_light",
+    "predicted": null,
+    "reason": "classes_too_close",
+    "similarity": 0.6781,
+    "margin": -0.0373
+  },
+  {
+    "mode": "dual",
+    "frame": "14",
+    "expected": "trailer",
+    "predicted": null,
+    "reason": "classes_too_close",
+    "similarity": 0.6366,
+    "margin": -0.016
+  },
+  {
+    "mode": "dual",
+    "frame": "15",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.7955,
+    "margin": 0.0445
+  },
+  {
+    "mode": "dual",
+    "frame": "16",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.6649,
+    "margin": 0.6649
+  },
+  {
+    "mode": "dual",
+    "frame": "17",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.6507,
+    "margin": 0.0747
+  },
+  {
+    "mode": "dual",
+    "frame": "18",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8867,
+    "margin": 0.0957
+  },
+  {
+    "mode": "dual",
+    "frame": "19",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8268,
+    "margin": 0.0788
+  },
+  {
+    "mode": "dual",
+    "frame": "20",
+    "expected": "truck_light",
+    "predicted": "truck_light",
+    "reason": "accepted",
+    "similarity": 0.7771,
+    "margin": 0.7771
+  },
+  {
+    "mode": "dual",
+    "frame": "21",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.7381,
+    "margin": 0.104
+  },
+  {
+    "mode": "dual",
+    "frame": "22",
+    "expected": "trailer",
+    "predicted": "trailer",
+    "reason": "accepted",
+    "similarity": 0.7607,
+    "margin": 0.1227
+  },
+  {
+    "mode": "dual",
+    "frame": "23",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.7928,
+    "margin": 0.1054
+  },
+  {
+    "mode": "dual",
+    "frame": "24",
+    "expected": "tractor",
+    "predicted": "tractor",
+    "reason": "accepted",
+    "similarity": 0.7571,
+    "margin": 0.7571
+  },
+  {
+    "mode": "dual",
+    "frame": "25",
+    "expected": "truck",
+    "predicted": "truck",
+    "reason": "accepted",
+    "similarity": 0.8815,
+    "margin": 0.8815
+  }
+]

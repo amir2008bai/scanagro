@@ -1,0 +1,794 @@
+[
+  {
+    "frame": "1",
+    "expected": "truck",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "truck",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.8505,
+    "leave_machine_out": "truck",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.8505,
+    "neighbours": [
+      {
+        "reference": "frame25_front_quarter.jpg",
+        "vehicle_type": "truck",
+        "source": "site_frames",
+        "similarity": 0.8505
+      },
+      {
+        "reference": "frame19_front_quarter.jpg",
+        "vehicle_type": "truck",
+        "source": "site_frames",
+        "similarity": 0.8259
+      },
+      {
+        "reference": "frame3_front_quarter.jpg",
+        "vehicle_type": "truck",
+        "source": "site_frames",
+        "similarity": 0.7901
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "2",
+    "expected": "truck_light",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "truck_light",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.7518,
+    "leave_machine_out": "truck_light",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.7518,
+    "neighbours": [
+      {
+        "reference": "frame11_front_quarter.jpg",
+        "vehicle_type": "truck_light",
+        "source": "site_frames",
+        "similarity": 0.7518
+      },
+      {
+        "reference": "frame20_front_quarter.jpg",
+        "vehicle_type": "truck_light",
+        "source": "site_frames",
+        "similarity": 0.7465
+      },
+      {
+        "reference": "GAZ-53-12_Soviet_Truck_in_Ukraine.jpg",
+        "vehicle_type": "truck_light",
+        "source": "web",
+        "similarity": 0.6016
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "3",
+    "expected": "truck",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "truck",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.8546,
+    "leave_machine_out": "truck",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.8546,
+    "neighbours": [
+      {
+        "reference": "frame25_front_quarter.jpg",
+        "vehicle_type": "truck",
+        "source": "site_frames",
+        "similarity": 0.8546
+      },
+      {
+        "reference": "frame18_front_quarter.jpg",
+        "vehicle_type": "truck",
+        "source": "site_frames",
+        "similarity": 0.8111
+      },
+      {
+        "reference": "frame10_front_quarter.jpg",
+        "vehicle_type": "truck",
+        "source": "site_frames",
+        "similarity": 0.7982
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "4",
+    "expected": "trailer",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": null,
+    "leave_frame_out_reason": "classes_too_close",
+    "leave_frame_out_similarity": 0.6729,
+    "leave_machine_out": null,
+    "leave_machine_out_reason": "classes_too_close",
+    "leave_machine_out_similarity": 0.6729,
+    "neighbours": [
+      {
+        "reference": "frame13_rear.jpg",
+        "vehicle_type": "truck_light",
+        "source": "site_frames",
+        "similarity": 0.6888
+      },
+      {
+        "reference": "frame12_rear_quarter.jpg",
+        "vehicle_type": "trailer",
+        "source": "site_frames",
+        "similarity": 0.6729
+      },
+      {
+        "reference": "frame22_rear.jpg",
+        "vehicle_type": "trailer",
+        "source": "site_frames",
+        "similarity": 0.6381
+      }
+    ],
+    "view": "rear"
+  },
+  {
+    "frame": "5",
+    "expected": "tractor",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "tractor",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.8784,
+    "leave_machine_out": "tractor",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.7895,
+    "neighbours": [
+      {
+        "reference": "frame7_side.jpg",
+        "vehicle_type": "tractor",
+        "source": "site_frames",
+        "similarity": 0.7895
+      },
+      {
+        "reference": "frame6_front_quarter.jpg",
+        "vehicle_type": "tractor",
+        "source": "site_frames",
+        "similarity": 0.7752
+      },
+      {
+        "reference": "John_Deere_7600_tractor_-_geograph.org.uk_-_5675800.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.754
+      }
+    ],
+    "view": "front"
+  },
+  {
+    "frame": "6",
+    "expected": "tractor",
+    "coco_label": "train",
+    "detector_type": "truck",
+    "leave_frame_out": "tractor",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.8105,
+    "leave_machine_out": "tractor",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.8105,
+    "neighbours": [
+      {
+        "reference": "frame7_side.jpg",
+        "vehicle_type": "tractor",
+        "source": "site_frames",
+        "similarity": 0.8105
+      },
+      {
+        "reference": "frame5_front.jpg",
+        "vehicle_type": "tractor",
+        "source": "site_frames",
+        "similarity": 0.777
+      },
+      {
+        "reference": "frame15_front_quarter.jpg",
+        "vehicle_type": "tractor",
+        "source": "site_frames",
+        "similarity": 0.7678
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "7",
+    "expected": "tractor",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "tractor",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.8105,
+    "leave_machine_out": "tractor",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.8105,
+    "neighbours": [
+      {
+        "reference": "frame6_front_quarter.jpg",
+        "vehicle_type": "tractor",
+        "source": "site_frames",
+        "similarity": 0.8105
+      },
+      {
+        "reference": "Belarus-82_in_Korolyov__1_.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.8022
+      },
+      {
+        "reference": "frame15_front_quarter.jpg",
+        "vehicle_type": "tractor",
+        "source": "site_frames",
+        "similarity": 0.7973
+      }
+    ],
+    "view": "side"
+  },
+  {
+    "frame": "8",
+    "expected": "truck_light",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": null,
+    "leave_frame_out_reason": "classes_too_close",
+    "leave_frame_out_similarity": 0.621,
+    "leave_machine_out": null,
+    "leave_machine_out_reason": "classes_too_close",
+    "leave_machine_out_similarity": 0.621,
+    "neighbours": [
+      {
+        "reference": "frame13_rear.jpg",
+        "vehicle_type": "truck_light",
+        "source": "site_frames",
+        "similarity": 0.7057
+      },
+      {
+        "reference": "frame21_rear_quarter.jpg",
+        "vehicle_type": "trailer",
+        "source": "site_frames",
+        "similarity": 0.621
+      },
+      {
+        "reference": "frame22_rear.jpg",
+        "vehicle_type": "trailer",
+        "source": "site_frames",
+        "similarity": 0.5769
+      }
+    ],
+    "view": "rear"
+  },
+  {
+    "frame": "10",
+    "expected": "truck",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "truck",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.8613,
+    "leave_machine_out": "truck",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.8613,
+    "neighbours": [
+      {
+        "reference": "frame18_front_quarter.jpg",
+        "vehicle_type": "truck",
+        "source": "site_frames",
+        "similarity": 0.8613
+      },
+      {
+        "reference": "frame25_front_quarter.jpg",
+        "vehicle_type": "truck",
+        "source": "site_frames",
+        "similarity": 0.8441
+      },
+      {
+        "reference": "2000_Foden_truck_with_tipper_trailer__3_February_2009.jpg",
+        "vehicle_type": "trailer",
+        "source": "web",
+        "similarity": 0.8055
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "11",
+    "expected": "truck_light",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "truck_light",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.7638,
+    "leave_machine_out": "truck_light",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.7638,
+    "neighbours": [
+      {
+        "reference": "GAZ-53-12_Soviet_Truck_in_Ukraine.jpg",
+        "vehicle_type": "truck_light",
+        "source": "web",
+        "similarity": 0.7638
+      },
+      {
+        "reference": "frame2_front_quarter.jpg",
+        "vehicle_type": "truck_light",
+        "source": "site_frames",
+        "similarity": 0.7514
+      },
+      {
+        "reference": "frame20_front_quarter.jpg",
+        "vehicle_type": "truck_light",
+        "source": "site_frames",
+        "similarity": 0.7478
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "12",
+    "expected": "trailer",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "trailer",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.7586,
+    "leave_machine_out": "trailer",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.7586,
+    "neighbours": [
+      {
+        "reference": "frame22_rear.jpg",
+        "vehicle_type": "trailer",
+        "source": "site_frames",
+        "similarity": 0.7586
+      },
+      {
+        "reference": "frame4_rear.jpg",
+        "vehicle_type": "trailer",
+        "source": "site_frames",
+        "similarity": 0.6751
+      },
+      {
+        "reference": "frame21_rear_quarter.jpg",
+        "vehicle_type": "trailer",
+        "source": "site_frames",
+        "similarity": 0.6109
+      }
+    ],
+    "view": "rear_quarter"
+  },
+  {
+    "frame": "13",
+    "expected": "truck_light",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": null,
+    "leave_frame_out_reason": "classes_too_close",
+    "leave_frame_out_similarity": 0.6872,
+    "leave_machine_out": null,
+    "leave_machine_out_reason": "classes_too_close",
+    "leave_machine_out_similarity": 0.6872,
+    "neighbours": [
+      {
+        "reference": "frame8_rear.jpg",
+        "vehicle_type": "truck_light",
+        "source": "site_frames",
+        "similarity": 0.7091
+      },
+      {
+        "reference": "frame4_rear.jpg",
+        "vehicle_type": "trailer",
+        "source": "site_frames",
+        "similarity": 0.6872
+      },
+      {
+        "reference": "Dump_truck__Sabir__P1090306_.jpg",
+        "vehicle_type": "truck",
+        "source": "web",
+        "similarity": 0.6566
+      }
+    ],
+    "view": "rear"
+  },
+  {
+    "frame": "14",
+    "expected": "trailer",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "trailer",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.6675,
+    "leave_machine_out": "trailer",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.6675,
+    "neighbours": [
+      {
+        "reference": "frame17_rear.jpg",
+        "vehicle_type": "trailer",
+        "source": "site_frames",
+        "similarity": 0.6675
+      },
+      {
+        "reference": "frame4_rear.jpg",
+        "vehicle_type": "trailer",
+        "source": "site_frames",
+        "similarity": 0.5733
+      },
+      {
+        "reference": "frame13_rear.jpg",
+        "vehicle_type": "truck_light",
+        "source": "site_frames",
+        "similarity": 0.5436
+      }
+    ],
+    "view": "rear"
+  },
+  {
+    "frame": "15",
+    "expected": "tractor",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "tractor",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.8793,
+    "leave_machine_out": "tractor",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.7976,
+    "neighbours": [
+      {
+        "reference": "frame7_side.jpg",
+        "vehicle_type": "tractor",
+        "source": "site_frames",
+        "similarity": 0.7976
+      },
+      {
+        "reference": "frame6_front_quarter.jpg",
+        "vehicle_type": "tractor",
+        "source": "site_frames",
+        "similarity": 0.767
+      },
+      {
+        "reference": "John_Deere_7600_tractor_-_geograph.org.uk_-_5675800.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.7581
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "16",
+    "expected": "tractor",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "tractor",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.6278,
+    "leave_machine_out": "tractor",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.6278,
+    "neighbours": [
+      {
+        "reference": "frame24_front_quarter.jpg",
+        "vehicle_type": "tractor",
+        "source": "site_frames",
+        "similarity": 0.6278
+      },
+      {
+        "reference": "frame6_front_quarter.jpg",
+        "vehicle_type": "tractor",
+        "source": "site_frames",
+        "similarity": 0.6116
+      },
+      {
+        "reference": "frame15_front_quarter.jpg",
+        "vehicle_type": "tractor",
+        "source": "site_frames",
+        "similarity": 0.5966
+      }
+    ],
+    "view": "side"
+  },
+  {
+    "frame": "17",
+    "expected": "trailer",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "trailer",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.6662,
+    "leave_machine_out": "trailer",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.6662,
+    "neighbours": [
+      {
+        "reference": "frame14_rear.jpg",
+        "vehicle_type": "trailer",
+        "source": "site_frames",
+        "similarity": 0.6662
+      },
+      {
+        "reference": "frame8_rear.jpg",
+        "vehicle_type": "truck_light",
+        "source": "site_frames",
+        "similarity": 0.5582
+      },
+      {
+        "reference": "frame12_rear_quarter.jpg",
+        "vehicle_type": "trailer",
+        "source": "site_frames",
+        "similarity": 0.5533
+      }
+    ],
+    "view": "rear"
+  },
+  {
+    "frame": "18",
+    "expected": "truck",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "truck",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.8739,
+    "leave_machine_out": "truck",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.8739,
+    "neighbours": [
+      {
+        "reference": "frame25_front_quarter.jpg",
+        "vehicle_type": "truck",
+        "source": "site_frames",
+        "similarity": 0.8739
+      },
+      {
+        "reference": "frame10_front_quarter.jpg",
+        "vehicle_type": "truck",
+        "source": "site_frames",
+        "similarity": 0.8602
+      },
+      {
+        "reference": "frame3_front_quarter.jpg",
+        "vehicle_type": "truck",
+        "source": "site_frames",
+        "similarity": 0.8128
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "19",
+    "expected": "truck",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "truck",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.8267,
+    "leave_machine_out": "truck",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.8267,
+    "neighbours": [
+      {
+        "reference": "frame1_front_quarter.jpg",
+        "vehicle_type": "truck",
+        "source": "site_frames",
+        "similarity": 0.8267
+      },
+      {
+        "reference": "frame18_front_quarter.jpg",
+        "vehicle_type": "truck",
+        "source": "site_frames",
+        "similarity": 0.7985
+      },
+      {
+        "reference": "frame25_front_quarter.jpg",
+        "vehicle_type": "truck",
+        "source": "site_frames",
+        "similarity": 0.7862
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "20",
+    "expected": "truck_light",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "truck_light",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.7488,
+    "leave_machine_out": "truck_light",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.7488,
+    "neighbours": [
+      {
+        "reference": "frame2_front_quarter.jpg",
+        "vehicle_type": "truck_light",
+        "source": "site_frames",
+        "similarity": 0.7488
+      },
+      {
+        "reference": "frame11_front_quarter.jpg",
+        "vehicle_type": "truck_light",
+        "source": "site_frames",
+        "similarity": 0.7463
+      },
+      {
+        "reference": "ZiL-130_truck_2013_G1.jpg",
+        "vehicle_type": "truck_light",
+        "source": "web",
+        "similarity": 0.6113
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "21",
+    "expected": "trailer",
+    "coco_label": "train",
+    "detector_type": "truck",
+    "leave_frame_out": "trailer",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.7356,
+    "leave_machine_out": "trailer",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.7356,
+    "neighbours": [
+      {
+        "reference": "frame22_rear.jpg",
+        "vehicle_type": "trailer",
+        "source": "site_frames",
+        "similarity": 0.7356
+      },
+      {
+        "reference": "frame8_rear.jpg",
+        "vehicle_type": "truck_light",
+        "source": "site_frames",
+        "similarity": 0.6248
+      },
+      {
+        "reference": "frame4_rear.jpg",
+        "vehicle_type": "trailer",
+        "source": "site_frames",
+        "similarity": 0.6105
+      }
+    ],
+    "view": "rear_quarter"
+  },
+  {
+    "frame": "22",
+    "expected": "trailer",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "trailer",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.7574,
+    "leave_machine_out": "trailer",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.7574,
+    "neighbours": [
+      {
+        "reference": "frame12_rear_quarter.jpg",
+        "vehicle_type": "trailer",
+        "source": "site_frames",
+        "similarity": 0.7574
+      },
+      {
+        "reference": "frame21_rear_quarter.jpg",
+        "vehicle_type": "trailer",
+        "source": "site_frames",
+        "similarity": 0.7359
+      },
+      {
+        "reference": "frame4_rear.jpg",
+        "vehicle_type": "trailer",
+        "source": "site_frames",
+        "similarity": 0.6375
+      }
+    ],
+    "view": "rear"
+  },
+  {
+    "frame": "23",
+    "expected": "tractor",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "tractor",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.7709,
+    "leave_machine_out": "tractor",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.7709,
+    "neighbours": [
+      {
+        "reference": "K-700_II.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.7709
+      },
+      {
+        "reference": "K-700.jpg",
+        "vehicle_type": "tractor",
+        "source": "web",
+        "similarity": 0.7382
+      },
+      {
+        "reference": "frame5_front.jpg",
+        "vehicle_type": "tractor",
+        "source": "site_frames",
+        "similarity": 0.6858
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "24",
+    "expected": "tractor",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "tractor",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.752,
+    "leave_machine_out": "tractor",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.752,
+    "neighbours": [
+      {
+        "reference": "frame15_front_quarter.jpg",
+        "vehicle_type": "tractor",
+        "source": "site_frames",
+        "similarity": 0.752
+      },
+      {
+        "reference": "frame6_front_quarter.jpg",
+        "vehicle_type": "tractor",
+        "source": "site_frames",
+        "similarity": 0.7221
+      },
+      {
+        "reference": "frame5_front.jpg",
+        "vehicle_type": "tractor",
+        "source": "site_frames",
+        "similarity": 0.721
+      }
+    ],
+    "view": "front_quarter"
+  },
+  {
+    "frame": "25",
+    "expected": "truck",
+    "coco_label": "truck",
+    "detector_type": "truck",
+    "leave_frame_out": "truck",
+    "leave_frame_out_reason": "accepted",
+    "leave_frame_out_similarity": 0.8736,
+    "leave_machine_out": "truck",
+    "leave_machine_out_reason": "accepted",
+    "leave_machine_out_similarity": 0.8736,
+    "neighbours": [
+      {
+        "reference": "frame18_front_quarter.jpg",
+        "vehicle_type": "truck",
+        "source": "site_frames",
+        "similarity": 0.8736
+      },
+      {
+        "reference": "frame3_front_quarter.jpg",
+        "vehicle_type": "truck",
+        "source": "site_frames",
+        "similarity": 0.8546
+      },
+      {
+        "reference": "frame1_front_quarter.jpg",
+        "vehicle_type": "truck",
+        "source": "site_frames",
+        "similarity": 0.8511
+      }
+    ],
+    "view": "front_quarter"
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "image_id": "00000000-0000-0000-0000-000000000000",
+    "filename": "example.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "detections": [
+      {
+        "detection_id": "00000000-0000-0000-0000-000000000001",
+        "vehicle_type": "truck",
+        "manufacturer": "KAMAZ",
+        "model": null,
+        "license_plate": "160 ALV 10",
+        "plate_readable": true,
+        "confidence": 0.8897,
+        "bbox": {
+          "x1": 0.1,
+          "y1": 0.15,
+          "x2": 0.75,
+          "y2": 0.9
+        },
+        "vehicle_confidence": 0.8897,
+        "manufacturer_confidence": 0.99,
+        "source_label": "truck",
+        "plate": {
+          "bbox": {
+            "x1": 0.6345,
+            "y1": 0.6474,
+            "x2": 0.6741,
+            "y2": 0.7099
+          },
+          "quad": [
+            [0.6338, 0.6592],
+            [0.6749, 0.6461],
+            [0.6754, 0.6986],
+            [0.6343, 0.7112]
+          ],
+          "detection_confidence": 0.9212,
+          "ocr_confidence": 0.9845,
+          "text": "160 ALV 10",
+          "text_raw": "160ALV10",
+          "readable": true,
+          "format": "kz_civil_2012",
+          "region": "Kostanay",
+          "ocr_engine": "ppocr",
+          "ocr_variant": "raw",
+          "rectified": false,
+          "perspective_skew": 1.1849,
+          "status": "accepted",
+          "crop_filename": "8f14e45fceea167a5a36dedd4bea2543-before.jpg",
+          "rectified_crop_filename": "8f14e45fceea167a5a36dedd4bea2543-after.jpg"
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "source": "body_text_ocr",
+              "text": "KAMAZ",
+              "confidence": 0.99,
+              "matched_brand": "KAMAZ"
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "engine": "ppocr",
+              "variant": "raw",
+              "text": "160ALV10",
+              "mean_confidence": 0.9845,
+              "min_confidence": 0.9845
+            },
+            {
+              "engine": "fast_plate_ocr",
+              "variant": "rectified_clahe",
+              "text": "160ALV10",
+              "mean_confidence": 0.9312,
+              "min_confidence": 0.8004
+            }
+          ]
+        }
+      },
+      {
+        "detection_id": "00000000-0000-0000-0000-000000000003",
+        "vehicle_type": "truck",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.8933,
+        "bbox": {
+          "x1": 0.05,
+          "y1": 0.4,
+          "x2": 0.3,
+          "y2": 0.72
+        },
+        "vehicle_confidence": 0.8933,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "plate": {
+          "bbox": {
+            "x1": 0.1502,
+            "y1": 0.5211,
+            "x2": 0.1793,
+            "y2": 0.5421
+          },
+          "quad": null,
+          "detection_confidence": 0.8971,
+          "ocr_confidence": 0.9012,
+          "text": null,
+          "text_raw": "597AQ10",
+          "readable": false,
+          "format": null,
+          "region": null,
+          "ocr_engine": "fast_plate_ocr",
+          "ocr_variant": "raw",
+          "rectified": false,
+          "perspective_skew": null,
+          "status": "no_matching_plate_format",
+          "crop_filename": "c9f0f895fb98ab9159f51fd0297e236d-before.jpg",
+          "rectified_crop_filename": null
+        },
+        "extra": null
+      }
+    ],
+    "status": "completed",
+    "latest_job_id": "00000000-0000-0000-0000-000000000002",
+    "result_job_id": "00000000-0000-0000-0000-000000000002",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "error_message": null
+  }
+]

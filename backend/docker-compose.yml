@@ -1,0 +1,115 @@
+name: fable
+
+x-backend: &backend
+  build: .
+  image: fable-backend:local
+  env_file: .env
+  environment:
+    DATABASE_URL: postgresql+asyncpg://app:${POSTGRES_PASSWORD:?Run scripts/init_config.py}@db:5432/fable
+    STORAGE_DIR: /data/storage
+    # Overrides whatever .env says: inside the container the weights live on a volume.
+    VISION_MODEL_DIR: /data/models
+    MODEL_CACHE_DIR: /data/models
+    # Reference photos are operational data, not code: they live on their own volume so
+    # they survive rebuilds and can be added to without touching the image.
+    VISION_REFERENCE_DIR: /data/reference
+    PROCESSING_MODE: worker
+  volumes:
+    - image_storage:/data/storage
+    - model_cache:/data/models
+    - reference_gallery:/data/reference
+  extra_hosts:
+    - "host.docker.internal:host-gateway"
+  read_only: true
+  tmpfs:
+    - /tmp:size=512m,mode=1777
+  security_opt:
+    - no-new-privileges:true
+  cap_drop: [ALL]
+  init: true
+  stop_grace_period: 20s
+  logging:
+    driver: json-file
+    options:
+      max-size: "10m"
+      max-file: "3"
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: fable
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run scripts/init_config.py}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U app -d fable"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  migrate:
+    <<: *backend
+    command: ["alembic", "upgrade", "head"]
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: "no"
+
+  # Prepares both data volumes once: downloads the model weights and verifies each
+  # against the checksum pinned in app/services/vision/local/model_registry.py, then
+  # seeds and indexes the reference gallery. api and worker wait for it, so they never
+  # start against a half-downloaded weight file or a stale index. Needs outbound HTTPS on
+  # the first run only; afterwards the volumes are warm and this exits immediately.
+  fetch-models:
+    <<: *backend
+    command:
+      - sh
+      - -c
+      - >-
+        python scripts/fetch_models.py --dir /data/models &&
+        python scripts/build_reference_gallery.py --dir /data/reference
+        --seed-from reference_seed
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: "no"
+
+  api:
+    <<: *backend
+    ports:
+      - "127.0.0.1:${API_PORT:-8000}:8000"
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      fetch-models:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "python", "-c", "import os, urllib.request; urllib.request.urlopen('http://127.0.0.1:8000' + os.getenv('API_V1_PREFIX', '/api/v1') + '/health', timeout=4)"]
+      interval: 20s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    mem_limit: 1536m
+    restart: unless-stopped
+
+  worker:
+    <<: *backend
+    command: ["python", "-m", "app.worker"]
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      fetch-models:
+        condition: service_completed_successfully
+    # The recognition models sit in memory for the life of the process. Measured peak is
+    # ~1.0 GB with VISION_MAX_PARALLEL_IMAGES=1; raise both together, not one alone.
+    mem_limit: 3g
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  image_storage:
+  model_cache:
+  reference_gallery:

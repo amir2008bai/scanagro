@@ -1,0 +1,4328 @@
+[
+  {
+    "image_id": "e985d4e5-94e4-448c-b07e-f6f065927066",
+    "filename": "1.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "7ee34518-9fc2-47de-adba-922a2239d36f",
+    "error_message": null,
+    "result_job_id": "7ee34518-9fc2-47de-adba-922a2239d36f",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "da56516c-d6bd-4793-b4f1-3184e5d5cd5e",
+        "vehicle_type": "truck",
+        "manufacturer": "KAMAZ",
+        "model": null,
+        "license_plate": "160 ALV 10",
+        "plate_readable": true,
+        "confidence": 0.8871,
+        "bbox": {
+          "x1": 0.14694940476190477,
+          "y1": 0.19671052631578947,
+          "x2": 0.6826636904761905,
+          "y2": 0.9210526315789473
+        },
+        "extra": {
+          "additional_plates": [
+            {
+              "bbox": {
+                "x1": 0.5665922619047619,
+                "x2": 0.6160714285714286,
+                "y1": 0.5802631578947368,
+                "y2": 0.625
+              },
+              "quad": [
+                [
+                  0.56436,
+                  0.576316
+                ],
+                [
+                  0.618118,
+                  0.576316
+                ],
+                [
+                  0.618118,
+                  0.628618
+                ],
+                [
+                  0.56436,
+                  0.628618
+                ]
+              ],
+              "text": null,
+              "region": null,
+              "status": "no_matching_plate_format",
+              "readable": false,
+              "text_raw": "KAM174",
+              "rectified": true,
+              "ocr_engine": "fast_plate_ocr",
+              "ocr_variant": "rectified",
+              "plate_format": null,
+              "crop_filename": "ff4d8a2e5f254d1b8e1ed325a165842c-before.jpg",
+              "ocr_confidence": 0.4586,
+              "perspective_skew": 0.0,
+              "detection_confidence": 0.8797,
+              "disagreement_positions": [],
+              "rectified_crop_filename": "ff4d8a2e5f254d1b8e1ed325a165842c-after.jpg"
+            },
+            {
+              "bbox": {
+                "x1": 0.4947916666666667,
+                "x2": 0.5282738095238095,
+                "y1": 0.7453947368421052,
+                "y2": 0.8006578947368421
+              },
+              "quad": [
+                [
+                  0.491815,
+                  0.740132
+                ],
+                [
+                  0.525432,
+                  0.740132
+                ],
+                [
+                  0.531731,
+                  0.80551
+                ],
+                [
+                  0.491815,
+                  0.80551
+                ]
+              ],
+              "text": null,
+              "region": null,
+              "status": "no_text_recognised",
+              "readable": false,
+              "text_raw": null,
+              "rectified": true,
+              "ocr_engine": null,
+              "ocr_variant": null,
+              "plate_format": null,
+              "crop_filename": "896e5d3b61cb41f395a42b460f0a77a8-before.jpg",
+              "ocr_confidence": null,
+              "perspective_skew": 0.16917674243450165,
+              "detection_confidence": 0.7834,
+              "disagreement_positions": [],
+              "rectified_crop_filename": "896e5d3b61cb41f395a42b460f0a77a8-after.jpg"
+            }
+          ],
+          "attribute_evidence": [
+            {
+              "margin": 0.9851,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame1_front_quarter.jpg",
+                  "similarity": 0.9851,
+                  "vehicle_type": "truck"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame25_front_quarter.jpg",
+                  "similarity": 0.8598,
+                  "vehicle_type": "truck"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame3_front_quarter.jpg",
+                  "similarity": 0.8246,
+                  "vehicle_type": "truck"
+                }
+              ],
+              "similarity": 0.9851,
+              "vehicle_type": "truck"
+            },
+            {
+              "text": "KAMAZ",
+              "source": "body_text_ocr",
+              "confidence": 0.9895,
+              "matched_brand": "KAMAZ"
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "160ALV10",
+              "engine": "ppocr",
+              "variant": "raw",
+              "min_confidence": 0.9852,
+              "mean_confidence": 0.9852
+            },
+            {
+              "text": "160ALV10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified",
+              "min_confidence": 0.9723,
+              "mean_confidence": 0.9884
+            },
+            {
+              "text": "160ALV10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified_clahe",
+              "min_confidence": 0.9165,
+              "mean_confidence": 0.9685
+            },
+            {
+              "text": "160ALV00",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.7833,
+              "mean_confidence": 0.9477
+            },
+            {
+              "text": "160ALV10KZ",
+              "engine": "ppocr",
+              "variant": "rectified",
+              "min_confidence": 0.6385,
+              "mean_confidence": 0.8143
+            },
+            {
+              "text": "160AL00",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.2354,
+              "mean_confidence": 0.6714
+            }
+          ]
+        },
+        "vehicle_confidence": 0.8871,
+        "manufacturer_confidence": 0.9895,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9851,
+        "plate": {
+          "bbox": {
+            "x1": 0.5718005952380952,
+            "y1": 0.6921052631578948,
+            "x2": 0.6205357142857143,
+            "y2": 0.7546052631578948
+          },
+          "quad": [
+            [
+              0.571448,
+              0.727331
+            ],
+            [
+              0.623996,
+              0.691984
+            ],
+            [
+              0.623996,
+              0.716505
+            ],
+            [
+              0.571448,
+              0.756559
+            ]
+          ],
+          "detection_confidence": 0.9183,
+          "ocr_confidence": 0.9852,
+          "text": "160 ALV 10",
+          "text_raw": "160ALV10",
+          "readable": true,
+          "format": "kz_civil_2012",
+          "region": "Kostanay",
+          "ocr_engine": "ppocr",
+          "ocr_variant": "raw",
+          "rectified": false,
+          "perspective_skew": 0.1751,
+          "status": "accepted",
+          "crop_filename": "5ab3514fbea04e79a1857ca0f6d829df-before.jpg",
+          "rectified_crop_filename": "5ab3514fbea04e79a1857ca0f6d829df-after.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "image_id": "ddfafd80-0d08-43bd-9fd2-3c4a078a4eff",
+    "filename": "10.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "4167f27f-0f42-457d-90c3-203bc0708252",
+    "error_message": null,
+    "result_job_id": "4167f27f-0f42-457d-90c3-203bc0708252",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "564c59d6-9c01-4f4b-bd5a-03cd95ba670c",
+        "vehicle_type": "truck",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": "124 AIX 10",
+        "plate_readable": true,
+        "confidence": 0.9059,
+        "bbox": {
+          "x1": 0.5922619047619048,
+          "y1": 0.20460526315789473,
+          "x2": 0.8307291666666666,
+          "y2": 0.6006578947368421
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.9869,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame10_front_quarter.jpg",
+                  "similarity": 0.9869,
+                  "vehicle_type": "truck"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame25_front_quarter.jpg",
+                  "similarity": 0.9057,
+                  "vehicle_type": "truck"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame18_front_quarter.jpg",
+                  "similarity": 0.9039,
+                  "vehicle_type": "truck"
+                }
+              ],
+              "similarity": 0.9869,
+              "vehicle_type": "truck"
+            },
+            {
+              "text": "124AIX10",
+              "confidence": 0.914
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "124AIX10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified",
+              "min_confidence": 0.9744,
+              "mean_confidence": 0.9864
+            },
+            {
+              "text": "124AIX10",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.9673,
+              "mean_confidence": 0.9954
+            },
+            {
+              "text": "124AIX10",
+              "engine": "ppocr",
+              "variant": "raw",
+              "min_confidence": 0.9274,
+              "mean_confidence": 0.9274
+            },
+            {
+              "text": "124AIX10",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.849,
+              "mean_confidence": 0.9777
+            },
+            {
+              "text": "124AIX10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified_clahe",
+              "min_confidence": 0.6479,
+              "mean_confidence": 0.9074
+            },
+            {
+              "text": "S124AIX10",
+              "engine": "ppocr",
+              "variant": "rectified",
+              "min_confidence": 0.5021,
+              "mean_confidence": 0.8131
+            }
+          ]
+        },
+        "vehicle_confidence": 0.9059,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9869,
+        "plate": {
+          "bbox": {
+            "x1": 0.6413690476190477,
+            "y1": 0.5072368421052632,
+            "x2": 0.6741071428571429,
+            "y2": 0.530921052631579
+          },
+          "quad": [
+            [
+              0.644921,
+              0.508459
+            ],
+            [
+              0.677929,
+              0.518461
+            ],
+            [
+              0.677929,
+              0.53298
+            ],
+            [
+              0.644921,
+              0.523411
+            ]
+          ],
+          "detection_confidence": 0.9194,
+          "ocr_confidence": 0.9786,
+          "text": "124 AIX 10",
+          "text_raw": "124AIX10",
+          "readable": true,
+          "format": "kz_civil_2012",
+          "region": "Kostanay",
+          "ocr_engine": "fast_plate_ocr",
+          "ocr_variant": "rectified",
+          "rectified": true,
+          "perspective_skew": 0.0294,
+          "status": "accepted",
+          "crop_filename": "84508c562c4c4ab2a4cecb2e5c3b692c-before.jpg",
+          "rectified_crop_filename": "84508c562c4c4ab2a4cecb2e5c3b692c-after.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "image_id": "01cc0dd2-eee5-4503-9ffe-64e69665811f",
+    "filename": "11.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "022d39c9-46e3-417d-b439-89d5459df7cb",
+    "error_message": null,
+    "result_job_id": "022d39c9-46e3-417d-b439-89d5459df7cb",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "e0c2a55a-00b3-4974-ae41-b790ec33d331",
+        "vehicle_type": "truck_light",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.8859,
+        "bbox": {
+          "x1": 0.7418154761904762,
+          "y1": 0.18947368421052632,
+          "x2": 0.8876488095238095,
+          "y2": 0.3980263157894737
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.9865,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame11_front_quarter.jpg",
+                  "similarity": 0.9865,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame20_front_quarter.jpg",
+                  "similarity": 0.7944,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "web",
+                  "reference": "GAZ-52_or_GAZ-53_truck_in_Mongolia.jpg",
+                  "similarity": 0.7895,
+                  "vehicle_type": "truck_light"
+                }
+              ],
+              "similarity": 0.9865,
+              "vehicle_type": "truck_light"
+            },
+            {
+              "text": "302BL10",
+              "confidence": 0.96
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "302BL10",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.9529,
+              "mean_confidence": 0.9864
+            },
+            {
+              "text": "302BL10",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.9529,
+              "mean_confidence": 0.9864
+            },
+            {
+              "text": "302B0LI10",
+              "engine": "ppocr",
+              "variant": "raw",
+              "min_confidence": 0.7424,
+              "mean_confidence": 0.7914
+            },
+            {
+              "text": "222L10",
+              "engine": "ppocr",
+              "variant": "rectified",
+              "min_confidence": 0.5285,
+              "mean_confidence": 0.5285
+            }
+          ]
+        },
+        "vehicle_confidence": 0.8859,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9865,
+        "plate": {
+          "bbox": {
+            "x1": 0.7719494047619048,
+            "y1": 0.3256578947368421,
+            "x2": 0.7957589285714286,
+            "y2": 0.34078947368421053
+          },
+          "quad": [
+            [
+              0.767212,
+              0.328491
+            ],
+            [
+              0.796794,
+              0.32206
+            ],
+            [
+              0.796794,
+              0.345509
+            ],
+            [
+              0.782205,
+              0.339185
+            ]
+          ],
+          "detection_confidence": 0.9077,
+          "ocr_confidence": 0.9381,
+          "text": null,
+          "text_raw": "302BL10",
+          "readable": false,
+          "format": null,
+          "region": null,
+          "ocr_engine": "fast_plate_ocr",
+          "ocr_variant": "raw",
+          "rectified": false,
+          "perspective_skew": 1.1308,
+          "status": "no_matching_plate_format",
+          "crop_filename": "58bb381e6781429995f89fa981fa6b26-before.jpg",
+          "rectified_crop_filename": "58bb381e6781429995f89fa981fa6b26-after.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "image_id": "bd25573d-4806-4ec5-a5f1-2600f86046d3",
+    "filename": "12.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "dd5f2e02-b9a9-4a66-bce4-26d57544f8d5",
+    "error_message": null,
+    "result_job_id": "dd5f2e02-b9a9-4a66-bce4-26d57544f8d5",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "bcdc174e-d529-4915-a67a-be40697c31e2",
+        "vehicle_type": "trailer",
+        "manufacturer": "MAN",
+        "model": null,
+        "license_plate": "153 AJX 10",
+        "plate_readable": true,
+        "confidence": 0.73,
+        "bbox": {
+          "x1": 0.45498511904761907,
+          "y1": 0.15197368421052632,
+          "x2": 0.7752976190476191,
+          "y2": 0.7171052631578947
+        },
+        "extra": {
+          "additional_plates": [
+            {
+              "bbox": {
+                "x1": 0.5877976190476191,
+                "x2": 0.5989583333333334,
+                "y1": 0.6638157894736842,
+                "y2": 0.7078947368421052
+              },
+              "quad": null,
+              "text": null,
+              "region": null,
+              "status": "no_text_recognised",
+              "readable": false,
+              "text_raw": null,
+              "rectified": false,
+              "ocr_engine": null,
+              "ocr_variant": null,
+              "plate_format": null,
+              "crop_filename": "aa5f15f8410643ab9d4489346353d57a-before.jpg",
+              "ocr_confidence": null,
+              "perspective_skew": null,
+              "detection_confidence": 0.2523,
+              "disagreement_positions": [],
+              "rectified_crop_filename": null
+            }
+          ],
+          "attribute_evidence": [
+            {
+              "margin": 0.9702,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame12_rear_quarter.jpg",
+                  "similarity": 0.9702,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame22_rear.jpg",
+                  "similarity": 0.7553,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame17_rear.jpg",
+                  "similarity": 0.6597,
+                  "vehicle_type": "trailer"
+                }
+              ],
+              "similarity": 0.9702,
+              "vehicle_type": "trailer"
+            },
+            {
+              "text": "MAN",
+              "source": "body_text_ocr",
+              "confidence": 0.9847,
+              "matched_brand": "MAN"
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "153AJX10",
+              "engine": "ppocr",
+              "variant": "raw",
+              "min_confidence": 0.9345,
+              "mean_confidence": 0.9345
+            },
+            {
+              "text": "153AJX10",
+              "engine": "ppocr",
+              "variant": "rectified",
+              "min_confidence": 0.8875,
+              "mean_confidence": 0.8875
+            },
+            {
+              "text": "153JX10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified",
+              "min_confidence": 0.684,
+              "mean_confidence": 0.8887
+            },
+            {
+              "text": "153JX10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified_clahe",
+              "min_confidence": 0.4662,
+              "mean_confidence": 0.797
+            },
+            {
+              "text": "153AX10",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.297,
+              "mean_confidence": 0.759
+            },
+            {
+              "text": "153AX10",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.297,
+              "mean_confidence": 0.759
+            }
+          ]
+        },
+        "vehicle_confidence": 0.73,
+        "manufacturer_confidence": 0.9847,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9702,
+        "plate": {
+          "bbox": {
+            "x1": 0.47767857142857145,
+            "y1": 0.6164473684210526,
+            "x2": 0.5219494047619048,
+            "y2": 0.6625
+          },
+          "quad": [
+            [
+              0.479251,
+              0.611842
+            ],
+            [
+              0.524293,
+              0.611842
+            ],
+            [
+              0.524293,
+              0.66676
+            ],
+            [
+              0.473665,
+              0.66676
+            ]
+          ],
+          "detection_confidence": 0.8045,
+          "ocr_confidence": 0.9345,
+          "text": "153 AJX 10",
+          "text_raw": "153AJX10",
+          "readable": true,
+          "format": "kz_civil_2012",
+          "region": "Kostanay",
+          "ocr_engine": "ppocr",
+          "ocr_variant": "raw",
+          "rectified": false,
+          "perspective_skew": 0.1784,
+          "status": "accepted",
+          "crop_filename": "e53b8342f4904b60889315bed6b04b85-before.jpg",
+          "rectified_crop_filename": "e53b8342f4904b60889315bed6b04b85-after.jpg"
+        }
+      },
+      {
+        "detection_id": "d553d270-0972-4664-81e3-7460745a4b62",
+        "vehicle_type": "trailer",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.3742,
+        "bbox": {
+          "x1": 0.0,
+          "y1": 0.0,
+          "x2": 0.49404761904761907,
+          "y2": 0.9967105263157895
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.6991,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame12_rear_quarter.jpg",
+                  "similarity": 0.6991,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame21_rear_quarter.jpg",
+                  "similarity": 0.6652,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame22_rear.jpg",
+                  "similarity": 0.602,
+                  "vehicle_type": "trailer"
+                }
+              ],
+              "similarity": 0.6991,
+              "vehicle_type": "trailer"
+            },
+            {
+              "text": "09162026WED141055",
+              "confidence": 0.95
+            }
+          ]
+        },
+        "vehicle_confidence": 0.3742,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.6991,
+        "plate": null
+      }
+    ]
+  },
+  {
+    "image_id": "a2a5c2ba-db50-4996-b352-1530ecc31763",
+    "filename": "13.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "d9b1a8ef-da99-4105-88d7-f86fda23f3b6",
+    "error_message": null,
+    "result_job_id": "d9b1a8ef-da99-4105-88d7-f86fda23f3b6",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "a4ebb15e-f757-4786-a93a-36d914a8d29e",
+        "vehicle_type": "truck_light",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.7252,
+        "bbox": {
+          "x1": 0.10044642857142858,
+          "y1": 0.28421052631578947,
+          "x2": 0.2347470238095238,
+          "y2": 0.4677631578947368
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.1936,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame13_rear.jpg",
+                  "similarity": 0.9639,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame14_rear.jpg",
+                  "similarity": 0.7703,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame8_rear.jpg",
+                  "similarity": 0.7378,
+                  "vehicle_type": "truck_light"
+                }
+              ],
+              "similarity": 0.9639,
+              "vehicle_type": "truck_light"
+            },
+            {
+              "text": "10",
+              "confidence": 0.906
+            },
+            {
+              "text": "681A9110",
+              "confidence": 0.789
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "681AG10",
+              "engine": "ppocr",
+              "variant": "raw",
+              "min_confidence": 0.8916,
+              "mean_confidence": 0.8916
+            },
+            {
+              "text": "691A9100",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified_clahe",
+              "min_confidence": 0.6931,
+              "mean_confidence": 0.8797
+            },
+            {
+              "text": "691AG110",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified",
+              "min_confidence": 0.382,
+              "mean_confidence": 0.8931
+            },
+            {
+              "text": "691AG110",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.3923,
+              "mean_confidence": 0.8736
+            },
+            {
+              "text": "691AG110",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.3923,
+              "mean_confidence": 0.8736
+            },
+            {
+              "text": "6810",
+              "engine": "ppocr",
+              "variant": "rectified",
+              "min_confidence": 0.752,
+              "mean_confidence": 0.7574
+            }
+          ]
+        },
+        "vehicle_confidence": 0.7252,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9639,
+        "plate": {
+          "bbox": {
+            "x1": 0.13764880952380953,
+            "y1": 0.4131578947368421,
+            "x2": 0.15736607142857142,
+            "y2": 0.4243421052631579
+          },
+          "quad": [
+            [
+              0.139728,
+              0.415089
+            ],
+            [
+              0.159796,
+              0.414669
+            ],
+            [
+              0.159796,
+              0.424079
+            ],
+            [
+              0.139728,
+              0.424612
+            ]
+          ],
+          "detection_confidence": 0.9125,
+          "ocr_confidence": 0.8671,
+          "text": null,
+          "text_raw": "681AG10",
+          "readable": false,
+          "format": null,
+          "region": null,
+          "ocr_engine": "ppocr",
+          "ocr_variant": "raw",
+          "rectified": false,
+          "perspective_skew": 0.012,
+          "status": "no_matching_plate_format",
+          "crop_filename": "b0cb89b3994d4981af470e8fc5792be3-before.jpg",
+          "rectified_crop_filename": "b0cb89b3994d4981af470e8fc5792be3-after.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "image_id": "4b9319f1-a1ff-4e10-8249-6798e656e0f6",
+    "filename": "14.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "b27aced6-be91-4446-a43b-9867cc4fd246",
+    "error_message": null,
+    "result_job_id": "b27aced6-be91-4446-a43b-9867cc4fd246",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "49510253-4ed9-4967-92cc-ed71febe0f45",
+        "vehicle_type": "trailer",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.5809,
+        "bbox": {
+          "x1": 0.06138392857142857,
+          "y1": 0.23026315789473684,
+          "x2": 0.2105654761904762,
+          "y2": 0.5144736842105263
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.2018,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame14_rear.jpg",
+                  "similarity": 0.9634,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame13_rear.jpg",
+                  "similarity": 0.7616,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame4_rear.jpg",
+                  "similarity": 0.6726,
+                  "vehicle_type": "trailer"
+                }
+              ],
+              "similarity": 0.9634,
+              "vehicle_type": "trailer"
+            },
+            {
+              "text": "AL",
+              "confidence": 0.763
+            },
+            {
+              "text": "625",
+              "confidence": 0.999
+            },
+            {
+              "text": "625",
+              "confidence": 0.829
+            },
+            {
+              "text": "10Z",
+              "confidence": 0.711
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "756250",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.2179,
+              "mean_confidence": 0.5947
+            },
+            {
+              "text": "756250",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.2179,
+              "mean_confidence": 0.5947
+            },
+            {
+              "text": "16625DZ",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified_clahe",
+              "min_confidence": 0.1049,
+              "mean_confidence": 0.4256
+            },
+            {
+              "text": "16250BZ",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified",
+              "min_confidence": 0.1252,
+              "mean_confidence": 0.2952
+            }
+          ]
+        },
+        "vehicle_confidence": 0.5809,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9634,
+        "plate": {
+          "bbox": {
+            "x1": 0.109375,
+            "y1": 0.43355263157894736,
+            "x2": 0.12276785714285714,
+            "y2": 0.45592105263157895
+          },
+          "quad": [
+            [
+              0.110072,
+              0.437004
+            ],
+            [
+              0.123791,
+              0.429391
+            ],
+            [
+              0.123791,
+              0.45773
+            ],
+            [
+              0.110969,
+              0.45773
+            ]
+          ],
+          "detection_confidence": 0.8888,
+          "ocr_confidence": 0.2248,
+          "text": null,
+          "text_raw": "756250",
+          "readable": false,
+          "format": null,
+          "region": null,
+          "ocr_engine": "fast_plate_ocr",
+          "ocr_variant": "raw",
+          "rectified": false,
+          "perspective_skew": 0.3166,
+          "status": "no_matching_plate_format",
+          "crop_filename": "a46e1eec8086499a9bc6e56869e814a7-before.jpg",
+          "rectified_crop_filename": "a46e1eec8086499a9bc6e56869e814a7-after.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "image_id": "4b4268f6-54b3-4cb8-8d65-d9747de3bcb5",
+    "filename": "15.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "cca240aa-9cbf-4150-95d8-c60f7fbd8f6a",
+    "error_message": null,
+    "result_job_id": "cca240aa-9cbf-4150-95d8-c60f7fbd8f6a",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "ae805d59-7d7e-4905-8805-f6b3064b1a3d",
+        "vehicle_type": "tractor",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.71,
+        "bbox": {
+          "x1": 0.07328869047619048,
+          "y1": 0.09342105263157895,
+          "x2": 0.3385416666666667,
+          "y2": 0.4789473684210526
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.9849,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame15_front_quarter.jpg",
+                  "similarity": 0.9849,
+                  "vehicle_type": "tractor"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame5_front.jpg",
+                  "similarity": 0.8897,
+                  "vehicle_type": "tractor"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame6_front_quarter.jpg",
+                  "similarity": 0.8071,
+                  "vehicle_type": "tractor"
+                }
+              ],
+              "similarity": 0.9849,
+              "vehicle_type": "tractor"
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "9",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.2514,
+              "mean_confidence": 0.2514
+            }
+          ]
+        },
+        "vehicle_confidence": 0.71,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9849,
+        "plate": {
+          "bbox": {
+            "x1": 0.3125,
+            "y1": 0.2993421052631579,
+            "x2": 0.32775297619047616,
+            "y2": 0.3203947368421053
+          },
+          "quad": [
+            [
+              0.313633,
+              0.304703
+            ],
+            [
+              0.327112,
+              0.299699
+            ],
+            [
+              0.327558,
+              0.31549
+            ],
+            [
+              0.313991,
+              0.320469
+            ]
+          ],
+          "detection_confidence": 0.3306,
+          "ocr_confidence": 0.1131,
+          "text": null,
+          "text_raw": "9",
+          "readable": false,
+          "format": null,
+          "region": null,
+          "ocr_engine": "fast_plate_ocr",
+          "ocr_variant": "rotated",
+          "rectified": false,
+          "perspective_skew": 0.0099,
+          "status": "no_matching_plate_format",
+          "crop_filename": "451435de1a4547c2a39dece51ee8f45f-before.jpg",
+          "rectified_crop_filename": "451435de1a4547c2a39dece51ee8f45f-after.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "image_id": "ba21b4cf-00a8-4d34-bc21-9ea31c61d26d",
+    "filename": "16 (1).jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "4d068ead-939c-4813-a26b-b18df6770e31",
+    "error_message": null,
+    "result_job_id": "4d068ead-939c-4813-a26b-b18df6770e31",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "8cd4c12e-11df-451e-84ad-c78bb99a1404",
+        "vehicle_type": "car",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.361,
+        "bbox": {
+          "x1": 0.0,
+          "y1": 0.35657894736842105,
+          "x2": 0.053943452380952384,
+          "y2": 0.45
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.1342,
+              "source": "reference_gallery",
+              "status": "below_similarity_floor",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame2_front_quarter.jpg",
+                  "similarity": 0.4882,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame13_rear.jpg",
+                  "similarity": 0.4338,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame20_front_quarter.jpg",
+                  "similarity": 0.3701,
+                  "vehicle_type": "truck_light"
+                }
+              ],
+              "similarity": 0.4882,
+              "vehicle_type": "truck_light"
+            }
+          ]
+        },
+        "vehicle_confidence": 0.361,
+        "manufacturer_confidence": null,
+        "source_label": "car",
+        "vehicle_type_source": "detector",
+        "vehicle_type_confidence": 0.361,
+        "plate": null
+      },
+      {
+        "detection_id": "9aae8fca-6ef6-454d-ac54-5a556e949b43",
+        "vehicle_type": "truck",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.3855,
+        "bbox": {
+          "x1": 0.8121279761904762,
+          "y1": 0.14736842105263157,
+          "x2": 0.9840029761904762,
+          "y2": 0.2835526315789474
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.0729,
+              "source": "reference_gallery",
+              "status": "below_similarity_floor",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame14_rear.jpg",
+                  "similarity": 0.4249,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame2_front_quarter.jpg",
+                  "similarity": 0.3519,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame13_rear.jpg",
+                  "similarity": 0.3468,
+                  "vehicle_type": "truck_light"
+                }
+              ],
+              "similarity": 0.4249,
+              "vehicle_type": "trailer"
+            }
+          ]
+        },
+        "vehicle_confidence": 0.3855,
+        "manufacturer_confidence": null,
+        "source_label": "train",
+        "vehicle_type_source": "detector",
+        "vehicle_type_confidence": 0.3855,
+        "plate": null
+      },
+      {
+        "detection_id": "d47c13fb-f722-40ab-975e-9a92b7595a2e",
+        "vehicle_type": "tractor",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.5076,
+        "bbox": {
+          "x1": 0.5569196428571429,
+          "y1": 0.09144736842105264,
+          "x2": 0.8143601190476191,
+          "y2": 0.45263157894736844
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.9604,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame16_side.jpg",
+                  "similarity": 0.9604,
+                  "vehicle_type": "tractor"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame24_front_quarter.jpg",
+                  "similarity": 0.7059,
+                  "vehicle_type": "tractor"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame7_side.jpg",
+                  "similarity": 0.6768,
+                  "vehicle_type": "tractor"
+                }
+              ],
+              "similarity": 0.9604,
+              "vehicle_type": "tractor"
+            }
+          ]
+        },
+        "vehicle_confidence": 0.5076,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9604,
+        "plate": null
+      }
+    ]
+  },
+  {
+    "image_id": "93c06670-f4bc-49df-9b6b-d0bf4fb52994",
+    "filename": "17.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "78592ced-3335-4058-afb4-3b742f3c6532",
+    "error_message": null,
+    "result_job_id": "78592ced-3335-4058-afb4-3b742f3c6532",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "7be67109-27cd-4097-a4a7-d1b61ea83c8f",
+        "vehicle_type": "trailer",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.8568,
+        "bbox": {
+          "x1": 0.45126488095238093,
+          "y1": 0.08289473684210526,
+          "x2": 0.8965773809523809,
+          "y2": 0.6967105263157894
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.3639,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame17_rear.jpg",
+                  "similarity": 0.9562,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame12_rear_quarter.jpg",
+                  "similarity": 0.6804,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame14_rear.jpg",
+                  "similarity": 0.632,
+                  "vehicle_type": "trailer"
+                }
+              ],
+              "similarity": 0.9562,
+              "vehicle_type": "trailer"
+            },
+            {
+              "text": "5EUA10",
+              "confidence": 0.922
+            },
+            {
+              "text": "KZ",
+              "confidence": 0.909
+            },
+            {
+              "text": "45EUA10",
+              "confidence": 0.925
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "45EUA10",
+              "engine": "ppocr",
+              "variant": "rectified",
+              "min_confidence": 0.9944,
+              "mean_confidence": 0.9961
+            },
+            {
+              "text": "45EUA10",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.9923,
+              "mean_confidence": 0.9986
+            },
+            {
+              "text": "45EUA10",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.9923,
+              "mean_confidence": 0.9986
+            },
+            {
+              "text": "45EUA10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified",
+              "min_confidence": 0.988,
+              "mean_confidence": 0.9933
+            },
+            {
+              "text": "45EUA10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified_clahe",
+              "min_confidence": 0.9811,
+              "mean_confidence": 0.9913
+            },
+            {
+              "text": "45EUA10",
+              "engine": "ppocr",
+              "variant": "raw",
+              "min_confidence": 0.9513,
+              "mean_confidence": 0.9513
+            }
+          ]
+        },
+        "vehicle_confidence": 0.8568,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9562,
+        "plate": {
+          "bbox": {
+            "x1": 0.4888392857142857,
+            "y1": 0.40592105263157896,
+            "x2": 0.5290178571428571,
+            "y2": 0.44802631578947366
+          },
+          "quad": [
+            [
+              0.493481,
+              0.407608
+            ],
+            [
+              0.531386,
+              0.432245
+            ],
+            [
+              0.531386,
+              0.450492
+            ],
+            [
+              0.493481,
+              0.427082
+            ]
+          ],
+          "detection_confidence": 0.8919,
+          "ocr_confidence": 0.8855,
+          "text": null,
+          "text_raw": "45EUA10",
+          "readable": false,
+          "format": null,
+          "region": null,
+          "ocr_engine": "ppocr",
+          "ocr_variant": "rectified",
+          "rectified": true,
+          "perspective_skew": 0.0651,
+          "status": "no_matching_plate_format",
+          "crop_filename": "549b7e0b87464a4d848daf1f04669b1d-before.jpg",
+          "rectified_crop_filename": "549b7e0b87464a4d848daf1f04669b1d-after.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "image_id": "cb9c31c9-ea8a-4b92-9749-830c1c7bd3e8",
+    "filename": "18.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "d8810cbd-1a09-4489-8bfb-031c98d41759",
+    "error_message": null,
+    "result_job_id": "d8810cbd-1a09-4489-8bfb-031c98d41759",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "1ea1ff39-a66f-4ef5-b738-17149818970b",
+        "vehicle_type": "truck",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": "041 AHF 10",
+        "plate_readable": true,
+        "confidence": 0.7842,
+        "bbox": {
+          "x1": 0.5238095238095238,
+          "y1": 0.0,
+          "x2": 0.8850446428571429,
+          "y2": 0.4953947368421053
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.9875,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame18_front_quarter.jpg",
+                  "similarity": 0.9875,
+                  "vehicle_type": "truck"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame10_front_quarter.jpg",
+                  "similarity": 0.9121,
+                  "vehicle_type": "truck"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame25_front_quarter.jpg",
+                  "similarity": 0.8794,
+                  "vehicle_type": "truck"
+                }
+              ],
+              "similarity": 0.9875,
+              "vehicle_type": "truck"
+            },
+            {
+              "text": "041AHF10",
+              "confidence": 0.958
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "041AHF10",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.9987,
+              "mean_confidence": 0.9994
+            },
+            {
+              "text": "041AHF10",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.9982,
+              "mean_confidence": 0.9994
+            },
+            {
+              "text": "041AHF10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified",
+              "min_confidence": 0.9795,
+              "mean_confidence": 0.9927
+            },
+            {
+              "text": "041AHF10",
+              "engine": "ppocr",
+              "variant": "raw",
+              "min_confidence": 0.9373,
+              "mean_confidence": 0.9373
+            },
+            {
+              "text": "041AHF10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified_clahe",
+              "min_confidence": 0.7434,
+              "mean_confidence": 0.9155
+            },
+            {
+              "text": "0441AHF10P",
+              "engine": "ppocr",
+              "variant": "rectified",
+              "min_confidence": 0.894,
+              "mean_confidence": 0.9664
+            }
+          ]
+        },
+        "vehicle_confidence": 0.7842,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9875,
+        "plate": {
+          "bbox": {
+            "x1": 0.5904017857142857,
+            "y1": 0.3671052631578947,
+            "x2": 0.6365327380952381,
+            "y2": 0.4039473684210526
+          },
+          "quad": [
+            [
+              0.594672,
+              0.367719
+            ],
+            [
+              0.640135,
+              0.386294
+            ],
+            [
+              0.640135,
+              0.405446
+            ],
+            [
+              0.594672,
+              0.387454
+            ]
+          ],
+          "detection_confidence": 0.9378,
+          "ocr_confidence": 0.9989,
+          "text": "041 AHF 10",
+          "text_raw": "041AHF10",
+          "readable": true,
+          "format": "kz_civil_2012",
+          "region": "Kostanay",
+          "ocr_engine": "fast_plate_ocr",
+          "ocr_variant": "raw",
+          "rectified": false,
+          "perspective_skew": 0.03,
+          "status": "accepted",
+          "crop_filename": "3dab62744b6b4d89933b8b1992ab3004-before.jpg",
+          "rectified_crop_filename": "3dab62744b6b4d89933b8b1992ab3004-after.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "image_id": "867a8954-e137-4953-962f-34aa1735e831",
+    "filename": "19.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "80392f48-2d81-401f-8988-8ef634132212",
+    "error_message": null,
+    "result_job_id": "80392f48-2d81-401f-8988-8ef634132212",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "74757c7e-91cf-4d2d-a8a8-ca5550557558",
+        "vehicle_type": "truck",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": "927 DPA 10",
+        "plate_readable": true,
+        "confidence": 0.8771,
+        "bbox": {
+          "x1": 0.12983630952380953,
+          "y1": 0.14473684210526316,
+          "x2": 0.5617559523809523,
+          "y2": 0.7605263157894737
+        },
+        "extra": {
+          "additional_plates": [
+            {
+              "bbox": {
+                "x1": 0.3560267857142857,
+                "x2": 0.40029761904761907,
+                "y1": 0.6177631578947368,
+                "y2": 0.6703947368421053
+              },
+              "quad": null,
+              "text": null,
+              "region": null,
+              "status": "no_text_recognised",
+              "readable": false,
+              "text_raw": null,
+              "rectified": false,
+              "ocr_engine": null,
+              "ocr_variant": null,
+              "plate_format": null,
+              "crop_filename": "9c6e5438bb564b789c3a63bda519c539-before.jpg",
+              "ocr_confidence": null,
+              "perspective_skew": null,
+              "detection_confidence": 0.8716,
+              "disagreement_positions": [],
+              "rectified_crop_filename": null
+            }
+          ],
+          "attribute_evidence": [
+            {
+              "margin": 0.985,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame19_front_quarter.jpg",
+                  "similarity": 0.985,
+                  "vehicle_type": "truck"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame1_front_quarter.jpg",
+                  "similarity": 0.8284,
+                  "vehicle_type": "truck"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame10_front_quarter.jpg",
+                  "similarity": 0.8011,
+                  "vehicle_type": "truck"
+                }
+              ],
+              "similarity": 0.985,
+              "vehicle_type": "truck"
+            },
+            {
+              "text": "CTAMEP",
+              "confidence": 0.908
+            },
+            {
+              "text": "927DPA10",
+              "confidence": 0.989
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "927DPA10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified",
+              "min_confidence": 0.9885,
+              "mean_confidence": 0.9955
+            },
+            {
+              "text": "927DPA10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified_clahe",
+              "min_confidence": 0.9786,
+              "mean_confidence": 0.9927
+            },
+            {
+              "text": "927DPA10",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.9712,
+              "mean_confidence": 0.9956
+            },
+            {
+              "text": "927DPA10",
+              "engine": "ppocr",
+              "variant": "raw",
+              "min_confidence": 0.9287,
+              "mean_confidence": 0.9287
+            },
+            {
+              "text": "2927DDPA10Z",
+              "engine": "ppocr",
+              "variant": "rectified",
+              "min_confidence": 0.8114,
+              "mean_confidence": 0.9034
+            }
+          ]
+        },
+        "vehicle_confidence": 0.8771,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.985,
+        "plate": {
+          "bbox": {
+            "x1": 0.4408482142857143,
+            "y1": 0.5953947368421053,
+            "x2": 0.49330357142857145,
+            "y2": 0.6407894736842106
+          },
+          "quad": [
+            [
+              0.447129,
+              0.612363
+            ],
+            [
+              0.497415,
+              0.594571
+            ],
+            [
+              0.497415,
+              0.6185
+            ],
+            [
+              0.447129,
+              0.638419
+            ]
+          ],
+          "detection_confidence": 0.9274,
+          "ocr_confidence": 0.9909,
+          "text": "927 DPA 10",
+          "text_raw": "927DPA10",
+          "readable": true,
+          "format": "kz_civil_2012",
+          "region": "Kostanay",
+          "ocr_engine": "fast_plate_ocr",
+          "ocr_variant": "rectified",
+          "rectified": true,
+          "perspective_skew": 0.0851,
+          "status": "accepted",
+          "crop_filename": "1a4ed6c779ed4d7a81800462c332908b-before.jpg",
+          "rectified_crop_filename": "1a4ed6c779ed4d7a81800462c332908b-after.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "image_id": "209ff447-766b-4bb4-ac6c-3bdb6a98d975",
+    "filename": "2.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "69f01953-fd87-4c41-8c6e-248659d5dc0b",
+    "error_message": null,
+    "result_job_id": "69f01953-fd87-4c41-8c6e-248659d5dc0b",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "1fb00c64-885e-4807-be22-1e95b1b32b41",
+        "vehicle_type": "truck_light",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.8874,
+        "bbox": {
+          "x1": 0.7898065476190477,
+          "y1": 0.10328947368421053,
+          "x2": 0.8999255952380952,
+          "y2": 0.29078947368421054
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.9813,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame2_front_quarter.jpg",
+                  "similarity": 0.9813,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame20_front_quarter.jpg",
+                  "similarity": 0.7469,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame11_front_quarter.jpg",
+                  "similarity": 0.7317,
+                  "vehicle_type": "truck_light"
+                }
+              ],
+              "similarity": 0.9813,
+              "vehicle_type": "truck_light"
+            },
+            {
+              "text": "681AS10",
+              "confidence": 0.891
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "681AS10",
+              "engine": "ppocr",
+              "variant": "raw",
+              "min_confidence": 0.6997,
+              "mean_confidence": 0.7795
+            },
+            {
+              "text": "E8TAS10",
+              "engine": "ppocr",
+              "variant": "rectified",
+              "min_confidence": 0.7357,
+              "mean_confidence": 0.8589
+            },
+            {
+              "text": "681ASN",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified",
+              "min_confidence": 0.1407,
+              "mean_confidence": 0.6199
+            },
+            {
+              "text": "69699A5",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.1777,
+              "mean_confidence": 0.4754
+            },
+            {
+              "text": "69699A5",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.1777,
+              "mean_confidence": 0.4754
+            },
+            {
+              "text": "696AS1",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified_clahe",
+              "min_confidence": 0.1156,
+              "mean_confidence": 0.2758
+            }
+          ],
+          "plate_ocr_disagreement_positions": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "vehicle_confidence": 0.8874,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9813,
+        "plate": {
+          "bbox": {
+            "x1": 0.8199404761904762,
+            "y1": 0.2355263157894737,
+            "x2": 0.8411458333333334,
+            "y2": 0.24802631578947368
+          },
+          "quad": [
+            [
+              0.817588,
+              0.233553
+            ],
+            [
+              0.842192,
+              0.233553
+            ],
+            [
+              0.842192,
+              0.245978
+            ],
+            [
+              0.821222,
+              0.247494
+            ]
+          ],
+          "detection_confidence": 0.8921,
+          "ocr_confidence": 0.7076,
+          "text": null,
+          "text_raw": "681AS10",
+          "readable": false,
+          "format": null,
+          "region": null,
+          "ocr_engine": "ppocr",
+          "ocr_variant": "raw",
+          "rectified": false,
+          "perspective_skew": 0.4755,
+          "status": "no_matching_plate_format",
+          "crop_filename": "862e5180f74946368afdc6018018b6e4-before.jpg",
+          "rectified_crop_filename": "862e5180f74946368afdc6018018b6e4-after.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "image_id": "54bb0cbf-745d-4e6a-b519-6465083917ab",
+    "filename": "20.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "92595779-18bb-4b52-afe6-80390c13afff",
+    "error_message": null,
+    "result_job_id": "92595779-18bb-4b52-afe6-80390c13afff",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "87d3c774-6e4f-411f-acbe-394947782fff",
+        "vehicle_type": "truck_light",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.8937,
+        "bbox": {
+          "x1": 0.08705357142857142,
+          "y1": 0.2138157894736842,
+          "x2": 0.21354166666666666,
+          "y2": 0.43486842105263157
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.9822,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame20_front_quarter.jpg",
+                  "similarity": 0.9822,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame11_front_quarter.jpg",
+                  "similarity": 0.8078,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame2_front_quarter.jpg",
+                  "similarity": 0.7337,
+                  "vehicle_type": "truck_light"
+                }
+              ],
+              "similarity": 0.9822,
+              "vehicle_type": "truck_light"
+            },
+            {
+              "text": "597AQ10",
+              "confidence": 0.948
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "597AQ10",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.9667,
+              "mean_confidence": 0.9946
+            },
+            {
+              "text": "597AQ10",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.9667,
+              "mean_confidence": 0.9946
+            },
+            {
+              "text": "597AQ10",
+              "engine": "ppocr",
+              "variant": "raw",
+              "min_confidence": 0.9575,
+              "mean_confidence": 0.9575
+            },
+            {
+              "text": "597AQ10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified_clahe",
+              "min_confidence": 0.7333,
+              "mean_confidence": 0.9538
+            },
+            {
+              "text": "597AQ10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified",
+              "min_confidence": 0.7251,
+              "mean_confidence": 0.9581
+            },
+            {
+              "text": "59710AQ",
+              "engine": "ppocr",
+              "variant": "rectified",
+              "min_confidence": 0.8567,
+              "mean_confidence": 0.9172
+            }
+          ]
+        },
+        "vehicle_confidence": 0.8937,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9822,
+        "plate": {
+          "bbox": {
+            "x1": 0.16145833333333334,
+            "y1": 0.3605263157894737,
+            "x2": 0.18526785714285715,
+            "y2": 0.38092105263157894
+          },
+          "quad": [
+            [
+              0.164773,
+              0.370419
+            ],
+            [
+              0.189765,
+              0.357321
+            ],
+            [
+              0.189765,
+              0.368073
+            ],
+            [
+              0.164773,
+              0.381392
+            ]
+          ],
+          "detection_confidence": 0.8997,
+          "ocr_confidence": 0.9496,
+          "text": null,
+          "text_raw": "597AQ10",
+          "readable": false,
+          "format": null,
+          "region": null,
+          "ocr_engine": "fast_plate_ocr",
+          "ocr_variant": "raw",
+          "rectified": false,
+          "perspective_skew": 0.0203,
+          "status": "no_matching_plate_format",
+          "crop_filename": "af53fd9fce604a64b4d814e84bede108-before.jpg",
+          "rectified_crop_filename": "af53fd9fce604a64b4d814e84bede108-after.jpg"
+        }
+      },
+      {
+        "detection_id": "f45c0807-d6ee-4b3b-b37d-d42fa1ad8eec",
+        "vehicle_type": "truck",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.3687,
+        "bbox": {
+          "x1": 0.5944940476190477,
+          "y1": 0.13157894736842105,
+          "x2": 0.6238839285714286,
+          "y2": 0.15526315789473685
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.0301,
+              "source": "reference_gallery",
+              "status": "below_similarity_floor",
+              "neighbours": [
+                {
+                  "source": "web",
+                  "reference": "CATERPILLAR_950_GC_Wheel_Loader_04.jpg",
+                  "similarity": 0.2188,
+                  "vehicle_type": "wheel_loader"
+                },
+                {
+                  "source": "web",
+                  "reference": "GAZ-52_or_GAZ-53_based_septic_truck_in_Afghanistan.jpg",
+                  "similarity": 0.1887,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "web",
+                  "reference": "CATERPILLAR_950_GC_Wheel_Loader_03.jpg",
+                  "similarity": 0.1828,
+                  "vehicle_type": "wheel_loader"
+                }
+              ],
+              "similarity": 0.2188,
+              "vehicle_type": "wheel_loader"
+            }
+          ]
+        },
+        "vehicle_confidence": 0.3687,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "detector",
+        "vehicle_type_confidence": 0.3687,
+        "plate": {
+          "bbox": {
+            "x1": 0.6004464285714286,
+            "y1": 0.14605263157894738,
+            "x2": 0.6026785714285714,
+            "y2": 0.14868421052631578
+          },
+          "quad": null,
+          "detection_confidence": 0.4209,
+          "ocr_confidence": null,
+          "text": null,
+          "text_raw": null,
+          "readable": false,
+          "format": null,
+          "region": null,
+          "ocr_engine": null,
+          "ocr_variant": null,
+          "rectified": false,
+          "perspective_skew": null,
+          "status": "no_text_recognised",
+          "crop_filename": "00512998b6d94c178048a18aa9740dfb-before.jpg",
+          "rectified_crop_filename": null
+        }
+      }
+    ]
+  },
+  {
+    "image_id": "8e56b348-fe9a-49b5-80e7-1680cedea189",
+    "filename": "21.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "ed4eba57-2bcb-4a19-8454-edb27ac6b2b3",
+    "error_message": null,
+    "result_job_id": "ed4eba57-2bcb-4a19-8454-edb27ac6b2b3",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "fd87e008-0928-498d-9757-012d8e87233f",
+        "vehicle_type": "trailer",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.5014,
+        "bbox": {
+          "x1": 0.1715029761904762,
+          "y1": 0.0,
+          "x2": 0.8348214285714286,
+          "y2": 0.7973684210526316
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.3299,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame21_rear_quarter.jpg",
+                  "similarity": 0.9807,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame22_rear.jpg",
+                  "similarity": 0.7433,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame4_rear.jpg",
+                  "similarity": 0.7215,
+                  "vehicle_type": "trailer"
+                }
+              ],
+              "similarity": 0.9807,
+              "vehicle_type": "trailer"
+            },
+            {
+              "text": "OM211236",
+              "confidence": 0.924
+            }
+          ]
+        },
+        "vehicle_confidence": 0.5014,
+        "manufacturer_confidence": null,
+        "source_label": "train",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9807,
+        "plate": null
+      }
+    ]
+  },
+  {
+    "image_id": "3ef7423b-2957-4b7b-bf5e-c248a145b826",
+    "filename": "22.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "dd96db44-890d-4d8c-9b53-7df02dad512b",
+    "error_message": null,
+    "result_job_id": "dd96db44-890d-4d8c-9b53-7df02dad512b",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "0f1a2b48-ab0d-45c8-9379-87e976122019",
+        "vehicle_type": "trailer",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.6449,
+        "bbox": {
+          "x1": 0.3939732142857143,
+          "y1": 0.1723684210526316,
+          "x2": 0.8307291666666666,
+          "y2": 0.7019736842105263
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.2611,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame22_rear.jpg",
+                  "similarity": 0.9582,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame21_rear_quarter.jpg",
+                  "similarity": 0.7686,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame12_rear_quarter.jpg",
+                  "similarity": 0.7631,
+                  "vehicle_type": "trailer"
+                }
+              ],
+              "similarity": 0.9582,
+              "vehicle_type": "trailer"
+            },
+            {
+              "text": "K49AKZ10",
+              "confidence": 0.825
+            }
+          ]
+        },
+        "vehicle_confidence": 0.6449,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9582,
+        "plate": null
+      },
+      {
+        "detection_id": "3631c1e5-d767-413e-bf5b-8bd0752e957e",
+        "vehicle_type": "trailer",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.3647,
+        "bbox": {
+          "x1": 0.0,
+          "y1": 0.06973684210526315,
+          "x2": 0.42485119047619047,
+          "y2": 1.0
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.6976,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame22_rear.jpg",
+                  "similarity": 0.6976,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame21_rear_quarter.jpg",
+                  "similarity": 0.6581,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame17_rear.jpg",
+                  "similarity": 0.5593,
+                  "vehicle_type": "trailer"
+                }
+              ],
+              "similarity": 0.6976,
+              "vehicle_type": "trailer"
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "WED135507",
+              "engine": "ppocr",
+              "variant": "rectified",
+              "min_confidence": 0.703,
+              "mean_confidence": 0.9076
+            },
+            {
+              "text": "WED1355507",
+              "engine": "ppocr",
+              "variant": "raw",
+              "min_confidence": 0.953,
+              "mean_confidence": 0.9737
+            },
+            {
+              "text": "135503",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified",
+              "min_confidence": 0.2166,
+              "mean_confidence": 0.5974
+            },
+            {
+              "text": "13550",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified_clahe",
+              "min_confidence": 0.3095,
+              "mean_confidence": 0.8048
+            },
+            {
+              "text": "4111555",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.2126,
+              "mean_confidence": 0.4518
+            },
+            {
+              "text": "4111555",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.2126,
+              "mean_confidence": 0.4518
+            }
+          ]
+        },
+        "vehicle_confidence": 0.3647,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.6976,
+        "plate": {
+          "bbox": {
+            "x1": 0.14694940476190477,
+            "y1": 0.05394736842105263,
+            "x2": 0.3630952380952381,
+            "y2": 0.10460526315789474
+          },
+          "quad": [
+            [
+              0.145192,
+              0.050369
+            ],
+            [
+              0.313193,
+              0.050031
+            ],
+            [
+              0.313193,
+              0.091579
+            ],
+            [
+              0.145192,
+              0.091579
+            ]
+          ],
+          "detection_confidence": 0.7307,
+          "ocr_confidence": 0.6894,
+          "text": null,
+          "text_raw": "WED135507",
+          "readable": false,
+          "format": null,
+          "region": null,
+          "ocr_engine": "ppocr",
+          "ocr_variant": "rectified",
+          "rectified": true,
+          "perspective_skew": 0.0082,
+          "status": "no_matching_plate_format",
+          "crop_filename": "84d5e67f6ae44b9ba0c83e58b291a300-before.jpg",
+          "rectified_crop_filename": "84d5e67f6ae44b9ba0c83e58b291a300-after.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "image_id": "ccbface5-d6b3-425d-be39-0210f5491c40",
+    "filename": "23.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "bf009a08-40a5-4446-85d2-fdd498e52a15",
+    "error_message": null,
+    "result_job_id": "bf009a08-40a5-4446-85d2-fdd498e52a15",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "690c203a-56f7-477c-8332-e6fd3e675230",
+        "vehicle_type": "tractor",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.6429,
+        "bbox": {
+          "x1": 0.42150297619047616,
+          "y1": 0.060526315789473685,
+          "x2": 0.7488839285714286,
+          "y2": 0.4453947368421053
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.9818,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame23_front_quarter.jpg",
+                  "similarity": 0.9818,
+                  "vehicle_type": "tractor"
+                },
+                {
+                  "source": "web",
+                  "reference": "K-700_II.jpg",
+                  "similarity": 0.8028,
+                  "vehicle_type": "tractor"
+                },
+                {
+                  "source": "web",
+                  "reference": "K-700.jpg",
+                  "similarity": 0.7732,
+                  "vehicle_type": "tractor"
+                }
+              ],
+              "similarity": 0.9818,
+              "vehicle_type": "tractor"
+            },
+            {
+              "text": "523",
+              "confidence": 0.831
+            }
+          ]
+        },
+        "vehicle_confidence": 0.6429,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9818,
+        "plate": null
+      }
+    ]
+  },
+  {
+    "image_id": "b6ff38e8-3d25-4e73-8723-55b0628b76fc",
+    "filename": "24.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "049c94dd-e629-45d8-bafa-a8e803e3d1ac",
+    "error_message": null,
+    "result_job_id": "049c94dd-e629-45d8-bafa-a8e803e3d1ac",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "690670a9-e435-413b-ae40-29d5c89db1bd",
+        "vehicle_type": "truck",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.3692,
+        "bbox": {
+          "x1": 0.8351934523809523,
+          "y1": 0.4026315789473684,
+          "x2": 0.8645833333333334,
+          "y2": 0.4440789473684211
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.0187,
+              "source": "reference_gallery",
+              "status": "below_similarity_floor",
+              "neighbours": [
+                {
+                  "source": "web",
+                  "reference": "A_combine_harvester_in_the_field_above_Y_Storws_-_geograph.org.uk_-_1222066.jpg",
+                  "similarity": 0.2674,
+                  "vehicle_type": "combine_harvester"
+                },
+                {
+                  "source": "web",
+                  "reference": "A_combine_harvester_-_geograph.org.uk_-_896319.jpg",
+                  "similarity": 0.2591,
+                  "vehicle_type": "combine_harvester"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame24_front_quarter.jpg",
+                  "similarity": 0.2487,
+                  "vehicle_type": "tractor"
+                }
+              ],
+              "similarity": 0.2674,
+              "vehicle_type": "combine_harvester"
+            }
+          ]
+        },
+        "vehicle_confidence": 0.3692,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "detector",
+        "vehicle_type_confidence": 0.3692,
+        "plate": null
+      },
+      {
+        "detection_id": "7affd6d1-aa17-4213-b479-514c1fe8e558",
+        "vehicle_type": "tractor",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.7747,
+        "bbox": {
+          "x1": 0.11495535714285714,
+          "y1": 0.3618421052631579,
+          "x2": 0.24293154761904762,
+          "y2": 0.5743421052631579
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.9799,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame24_front_quarter.jpg",
+                  "similarity": 0.9799,
+                  "vehicle_type": "tractor"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame7_side.jpg",
+                  "similarity": 0.7619,
+                  "vehicle_type": "tractor"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame15_front_quarter.jpg",
+                  "similarity": 0.7568,
+                  "vehicle_type": "tractor"
+                }
+              ],
+              "similarity": 0.9799,
+              "vehicle_type": "tractor"
+            }
+          ]
+        },
+        "vehicle_confidence": 0.7747,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9799,
+        "plate": null
+      }
+    ]
+  },
+  {
+    "image_id": "453fcfe1-5e1c-4e0b-b34e-906cf040edb3",
+    "filename": "25.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "188f3340-65c4-4feb-bc74-626daf903ad4",
+    "error_message": null,
+    "result_job_id": "188f3340-65c4-4feb-bc74-626daf903ad4",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "1eafb84a-7345-4e91-99b5-078629c7ccfa",
+        "vehicle_type": "car",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.5991,
+        "bbox": {
+          "x1": 0.0,
+          "y1": 0.3223684210526316,
+          "x2": 0.06510416666666667,
+          "y2": 0.4506578947368421
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.0765,
+              "source": "reference_gallery",
+              "status": "below_similarity_floor",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame2_front_quarter.jpg",
+                  "similarity": 0.4153,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame13_rear.jpg",
+                  "similarity": 0.4069,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame14_rear.jpg",
+                  "similarity": 0.3388,
+                  "vehicle_type": "trailer"
+                }
+              ],
+              "similarity": 0.4153,
+              "vehicle_type": "truck_light"
+            }
+          ]
+        },
+        "vehicle_confidence": 0.5991,
+        "manufacturer_confidence": null,
+        "source_label": "car",
+        "vehicle_type_source": "detector",
+        "vehicle_type_confidence": 0.5991,
+        "plate": null
+      },
+      {
+        "detection_id": "36c9055e-af39-4f33-a7ff-f4b527a4c094",
+        "vehicle_type": "car",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.3633,
+        "bbox": {
+          "x1": 0.9334077380952381,
+          "y1": 0.29078947368421054,
+          "x2": 0.9717261904761905,
+          "y2": 0.4276315789473684
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.0263,
+              "source": "reference_gallery",
+              "status": "below_similarity_floor",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame13_rear.jpg",
+                  "similarity": 0.3309,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame8_rear.jpg",
+                  "similarity": 0.3115,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame14_rear.jpg",
+                  "similarity": 0.3046,
+                  "vehicle_type": "trailer"
+                }
+              ],
+              "similarity": 0.3309,
+              "vehicle_type": "truck_light"
+            }
+          ]
+        },
+        "vehicle_confidence": 0.3633,
+        "manufacturer_confidence": null,
+        "source_label": "car",
+        "vehicle_type_source": "detector",
+        "vehicle_type_confidence": 0.3633,
+        "plate": null
+      },
+      {
+        "detection_id": "58e04498-29fb-4794-9d9f-8d2b01844d51",
+        "vehicle_type": "car",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.5011,
+        "bbox": {
+          "x1": 0.9698660714285714,
+          "y1": 0.9078947368421053,
+          "x2": 1.0,
+          "y2": 1.0
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.0164,
+              "source": "reference_gallery",
+              "status": "below_similarity_floor",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame13_rear.jpg",
+                  "similarity": 0.0978,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame4_rear.jpg",
+                  "similarity": 0.0963,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "web",
+                  "reference": "Logging_with_Belarus_MTZ_82_in_Estonia.jpg",
+                  "similarity": 0.0814,
+                  "vehicle_type": "tractor"
+                }
+              ],
+              "similarity": 0.0978,
+              "vehicle_type": "truck_light"
+            }
+          ]
+        },
+        "vehicle_confidence": 0.5011,
+        "manufacturer_confidence": null,
+        "source_label": "car",
+        "vehicle_type_source": "detector",
+        "vehicle_type_confidence": 0.5011,
+        "plate": null
+      },
+      {
+        "detection_id": "87be936c-541c-4bc7-b536-b21943ed2f84",
+        "vehicle_type": "car",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.4038,
+        "bbox": {
+          "x1": 0.9330357142857143,
+          "y1": 0.30328947368421055,
+          "x2": 0.9713541666666666,
+          "y2": 0.37763157894736843
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.0742,
+              "source": "reference_gallery",
+              "status": "below_similarity_floor",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame2_front_quarter.jpg",
+                  "similarity": 0.3382,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame8_rear.jpg",
+                  "similarity": 0.2953,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame13_rear.jpg",
+                  "similarity": 0.2922,
+                  "vehicle_type": "truck_light"
+                }
+              ],
+              "similarity": 0.3382,
+              "vehicle_type": "truck_light"
+            }
+          ]
+        },
+        "vehicle_confidence": 0.4038,
+        "manufacturer_confidence": null,
+        "source_label": "car",
+        "vehicle_type_source": "detector",
+        "vehicle_type_confidence": 0.4038,
+        "plate": null
+      },
+      {
+        "detection_id": "bb461f7d-44c2-4c55-9e62-59b0ee4cb0c1",
+        "vehicle_type": "truck",
+        "manufacturer": "KAMAZ",
+        "model": null,
+        "license_plate": "384 CBA 10",
+        "plate_readable": true,
+        "confidence": 0.8296,
+        "bbox": {
+          "x1": 0.2864583333333333,
+          "y1": 0.07171052631578947,
+          "x2": 0.8404017857142857,
+          "y2": 0.6236842105263158
+        },
+        "extra": {
+          "additional_plates": [
+            {
+              "bbox": {
+                "x1": 0.3835565476190476,
+                "x2": 0.42224702380952384,
+                "y1": 0.38026315789473686,
+                "y2": 0.41118421052631576
+              },
+              "quad": [
+                [
+                  0.382068,
+                  0.377632
+                ],
+                [
+                  0.423503,
+                  0.377632
+                ],
+                [
+                  0.423503,
+                  0.413278
+                ],
+                [
+                  0.382068,
+                  0.413588
+                ]
+              ],
+              "text": null,
+              "region": null,
+              "status": "no_matching_plate_format",
+              "readable": false,
+              "text_raw": "KAMAZ",
+              "rectified": true,
+              "ocr_engine": "ppocr",
+              "ocr_variant": "rectified",
+              "plate_format": null,
+              "crop_filename": "79e022146d0247dc918e0f3ef05f7539-before.jpg",
+              "ocr_confidence": 0.4361,
+              "perspective_skew": 0.0087,
+              "detection_confidence": 0.8708,
+              "disagreement_positions": [],
+              "rectified_crop_filename": "79e022146d0247dc918e0f3ef05f7539-after.jpg"
+            }
+          ],
+          "attribute_evidence": [
+            {
+              "margin": 0.9919,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame25_front_quarter.jpg",
+                  "similarity": 0.9919,
+                  "vehicle_type": "truck"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame10_front_quarter.jpg",
+                  "similarity": 0.9018,
+                  "vehicle_type": "truck"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame3_front_quarter.jpg",
+                  "similarity": 0.8964,
+                  "vehicle_type": "truck"
+                }
+              ],
+              "similarity": 0.9919,
+              "vehicle_type": "truck"
+            },
+            {
+              "text": "KAMAZ",
+              "source": "body_text_ocr",
+              "confidence": 0.9869,
+              "matched_brand": "KAMAZ"
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "384CBA10",
+              "engine": "ppocr",
+              "variant": "raw",
+              "min_confidence": 0.9972,
+              "mean_confidence": 0.9972
+            },
+            {
+              "text": "384CBA10",
+              "engine": "ppocr",
+              "variant": "rectified",
+              "min_confidence": 0.9837,
+              "mean_confidence": 0.9872
+            },
+            {
+              "text": "384CBA1",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified_clahe",
+              "min_confidence": 0.9549,
+              "mean_confidence": 0.9866
+            },
+            {
+              "text": "384CBA10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified",
+              "min_confidence": 0.7391,
+              "mean_confidence": 0.9605
+            },
+            {
+              "text": "384C8A10",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.7482,
+              "mean_confidence": 0.9508
+            },
+            {
+              "text": "384C8A10",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.7482,
+              "mean_confidence": 0.9508
+            }
+          ]
+        },
+        "vehicle_confidence": 0.8296,
+        "manufacturer_confidence": 0.9869,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9919,
+        "plate": {
+          "bbox": {
+            "x1": 0.3783482142857143,
+            "y1": 0.4953947368421053,
+            "x2": 0.41592261904761907,
+            "y2": 0.5375
+          },
+          "quad": [
+            [
+              0.373094,
+              0.49025
+            ],
+            [
+              0.418951,
+              0.519187
+            ],
+            [
+              0.418951,
+              0.54027
+            ],
+            [
+              0.373094,
+              0.513568
+            ]
+          ],
+          "detection_confidence": 0.9009,
+          "ocr_confidence": 0.9972,
+          "text": "384 CBA 10",
+          "text_raw": "384CBA10",
+          "readable": true,
+          "format": "kz_civil_2012",
+          "region": "Kostanay",
+          "ocr_engine": "ppocr",
+          "ocr_variant": "raw",
+          "rectified": false,
+          "perspective_skew": 0.1007,
+          "status": "accepted",
+          "crop_filename": "1b819fe6f0db43a5b8d43393eaa7a60b-before.jpg",
+          "rectified_crop_filename": "1b819fe6f0db43a5b8d43393eaa7a60b-after.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "image_id": "79a0f96f-1fc0-4fa6-bca7-73f80afe001b",
+    "filename": "3.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "6a4cf000-c221-4821-983a-c3c1be12aa7f",
+    "error_message": null,
+    "result_job_id": "6a4cf000-c221-4821-983a-c3c1be12aa7f",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "292cb586-ce20-46ce-8ed5-9261a2742260",
+        "vehicle_type": "truck",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": "592 LBA 10",
+        "plate_readable": true,
+        "confidence": 0.8297,
+        "bbox": {
+          "x1": 0.38095238095238093,
+          "y1": 0.08486842105263158,
+          "x2": 0.8939732142857143,
+          "y2": 0.7282894736842105
+        },
+        "extra": {
+          "additional_plates": [
+            {
+              "bbox": {
+                "x1": 0.45944940476190477,
+                "x2": 0.5070684523809523,
+                "y1": 0.43486842105263157,
+                "y2": 0.46842105263157896
+              },
+              "quad": [
+                [
+                  0.457589,
+                  0.431579
+                ],
+                [
+                  0.50865,
+                  0.431579
+                ],
+                [
+                  0.50865,
+                  0.47146
+                ],
+                [
+                  0.457589,
+                  0.47146
+                ]
+              ],
+              "text": null,
+              "region": null,
+              "status": "no_matching_plate_format",
+              "readable": false,
+              "text_raw": "KAMA",
+              "rectified": false,
+              "ocr_engine": "ppocr",
+              "ocr_variant": "raw",
+              "plate_format": null,
+              "crop_filename": "757dc3b5136c4faebdb198208e3b9984-before.jpg",
+              "ocr_confidence": 0.4473,
+              "perspective_skew": 0.0,
+              "detection_confidence": 0.8582,
+              "disagreement_positions": [],
+              "rectified_crop_filename": "757dc3b5136c4faebdb198208e3b9984-after.jpg"
+            }
+          ],
+          "attribute_evidence": [
+            {
+              "margin": 0.987,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame3_front_quarter.jpg",
+                  "similarity": 0.987,
+                  "vehicle_type": "truck"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame25_front_quarter.jpg",
+                  "similarity": 0.8975,
+                  "vehicle_type": "truck"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame10_front_quarter.jpg",
+                  "similarity": 0.8687,
+                  "vehicle_type": "truck"
+                }
+              ],
+              "similarity": 0.987,
+              "vehicle_type": "truck"
+            },
+            {
+              "text": "MA3",
+              "source": "body_text_ocr",
+              "could_be": [
+                "MAZ",
+                "KAMAZ"
+              ],
+              "rejected": "ambiguous_brand_token",
+              "confidence": 0.8247
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "592LBA10",
+              "engine": "ppocr",
+              "variant": "rectified",
+              "min_confidence": 0.9955,
+              "mean_confidence": 0.9969
+            },
+            {
+              "text": "592LBA10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified",
+              "min_confidence": 0.9017,
+              "mean_confidence": 0.9673
+            },
+            {
+              "text": "592LBA110",
+              "engine": "ppocr",
+              "variant": "raw",
+              "min_confidence": 0.9098,
+              "mean_confidence": 0.9542
+            },
+            {
+              "text": "592LBA10",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.7947,
+              "mean_confidence": 0.9728
+            },
+            {
+              "text": "592LBA10",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.7947,
+              "mean_confidence": 0.9728
+            },
+            {
+              "text": "52LBAA0",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified_clahe",
+              "min_confidence": 0.2746,
+              "mean_confidence": 0.5822
+            }
+          ]
+        },
+        "vehicle_confidence": 0.8297,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.987,
+        "plate": {
+          "bbox": {
+            "x1": 0.44345238095238093,
+            "y1": 0.5335526315789474,
+            "x2": 0.4880952380952381,
+            "y2": 0.594078947368421
+          },
+          "quad": [
+            [
+              0.447138,
+              0.529277
+            ],
+            [
+              0.490746,
+              0.578927
+            ],
+            [
+              0.490746,
+              0.602173
+            ],
+            [
+              0.447138,
+              0.554152
+            ]
+          ],
+          "detection_confidence": 0.8935,
+          "ocr_confidence": 0.996,
+          "text": "592 LBA 10",
+          "text_raw": "592LBA10",
+          "readable": true,
+          "format": "kz_civil_2012",
+          "region": "Kostanay",
+          "ocr_engine": "ppocr",
+          "ocr_variant": "rectified",
+          "rectified": true,
+          "perspective_skew": 0.0677,
+          "status": "accepted",
+          "crop_filename": "68503af302fc4bc981374f25ae64b870-before.jpg",
+          "rectified_crop_filename": "68503af302fc4bc981374f25ae64b870-after.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "image_id": "f1b2eb90-fd54-438d-b4bd-fe6176598a9e",
+    "filename": "4.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "ef7fed18-6cc2-4811-8aac-bc5f5f95faa4",
+    "error_message": null,
+    "result_job_id": "ef7fed18-6cc2-4811-8aac-bc5f5f95faa4",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "6300a357-2769-4e0a-9d2d-d84e146db265",
+        "vehicle_type": "trailer",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.6892,
+        "bbox": {
+          "x1": 0.13653273809523808,
+          "y1": 0.1361842105263158,
+          "x2": 0.5040922619047619,
+          "y2": 0.6625
+        },
+        "extra": {
+          "additional_plates": [
+            {
+              "bbox": {
+                "x1": 0.3991815476190476,
+                "x2": 0.4401041666666667,
+                "y1": 0.5427631578947368,
+                "y2": 0.5657894736842105
+              },
+              "quad": [
+                [
+                  0.398065,
+                  0.540789
+                ],
+                [
+                  0.44106,
+                  0.540789
+                ],
+                [
+                  0.44106,
+                  0.567595
+                ],
+                [
+                  0.398065,
+                  0.567595
+                ]
+              ],
+              "text": null,
+              "region": null,
+              "status": "no_matching_plate_format",
+              "readable": false,
+              "text_raw": "BODOBU",
+              "rectified": true,
+              "ocr_engine": "ppocr",
+              "ocr_variant": "rectified_clahe",
+              "plate_format": null,
+              "crop_filename": "63ba7a3d72f84fcd910d5eb5dc4c416e-before.jpg",
+              "ocr_confidence": 0.4735,
+              "perspective_skew": 0.0,
+              "detection_confidence": 0.5039,
+              "disagreement_positions": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "rectified_crop_filename": "63ba7a3d72f84fcd910d5eb5dc4c416e-after.jpg"
+            }
+          ],
+          "attribute_evidence": [
+            {
+              "margin": 0.2758,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame4_rear.jpg",
+                  "similarity": 0.9799,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame21_rear_quarter.jpg",
+                  "similarity": 0.709,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame14_rear.jpg",
+                  "similarity": 0.7084,
+                  "vehicle_type": "trailer"
+                }
+              ],
+              "similarity": 0.9799,
+              "vehicle_type": "trailer"
+            },
+            {
+              "text": "AAH",
+              "confidence": 0.99
+            },
+            {
+              "text": "1098",
+              "confidence": 0.985
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "AAH1098",
+              "engine": "ppocr",
+              "variant": "raw",
+              "min_confidence": 0.986,
+              "mean_confidence": 0.9896
+            },
+            {
+              "text": "AAH098",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.7209,
+              "mean_confidence": 0.866
+            },
+            {
+              "text": "AAH098",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.7209,
+              "mean_confidence": 0.866
+            },
+            {
+              "text": "A10",
+              "engine": "ppocr",
+              "variant": "rectified",
+              "min_confidence": 0.6306,
+              "mean_confidence": 0.8054
+            }
+          ]
+        },
+        "vehicle_confidence": 0.6892,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9799,
+        "plate": {
+          "bbox": {
+            "x1": 0.40625,
+            "y1": 0.45263157894736844,
+            "x2": 0.42819940476190477,
+            "y2": 0.4875
+          },
+          "quad": [
+            [
+              0.406455,
+              0.480037
+            ],
+            [
+              0.431577,
+              0.444079
+            ],
+            [
+              0.431577,
+              0.459283
+            ],
+            [
+              0.406455,
+              0.497488
+            ]
+          ],
+          "detection_confidence": 0.9051,
+          "ocr_confidence": 0.9872,
+          "text": null,
+          "text_raw": "AAH1098",
+          "readable": false,
+          "format": null,
+          "region": null,
+          "ocr_engine": "ppocr",
+          "ocr_variant": "raw",
+          "rectified": false,
+          "perspective_skew": 0.1377,
+          "status": "no_matching_plate_format",
+          "crop_filename": "d67c63dd15f944d58cd71193a3f053ce-before.jpg",
+          "rectified_crop_filename": "d67c63dd15f944d58cd71193a3f053ce-after.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "image_id": "9730fb4c-e4d3-462e-a240-079a5a34c4c5",
+    "filename": "5.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "bcf5aa3e-5ee4-4c57-b8dc-bb8b8193e59a",
+    "error_message": null,
+    "result_job_id": "bcf5aa3e-5ee4-4c57-b8dc-bb8b8193e59a",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "e77cf9c0-569f-453f-81ad-200a2e17b4e2",
+        "vehicle_type": "tractor",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.7605,
+        "bbox": {
+          "x1": 0.07552083333333333,
+          "y1": 0.1763157894736842,
+          "x2": 0.3709077380952381,
+          "y2": 0.6164473684210526
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.9729,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame5_front.jpg",
+                  "similarity": 0.9729,
+                  "vehicle_type": "tractor"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame15_front_quarter.jpg",
+                  "similarity": 0.888,
+                  "vehicle_type": "tractor"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame6_front_quarter.jpg",
+                  "similarity": 0.8048,
+                  "vehicle_type": "tractor"
+                }
+              ],
+              "similarity": 0.9729,
+              "vehicle_type": "tractor"
+            },
+            {
+              "text": "2TOO",
+              "confidence": 0.689
+            },
+            {
+              "text": "OILZHAAGRO",
+              "confidence": 0.75
+            },
+            {
+              "text": "2026",
+              "confidence": 0.988
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "TOO2026",
+              "engine": "ppocr",
+              "variant": "raw",
+              "min_confidence": 0.7468,
+              "mean_confidence": 0.8588
+            }
+          ]
+        },
+        "vehicle_confidence": 0.7605,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9729,
+        "plate": {
+          "bbox": {
+            "x1": 0.29389880952380953,
+            "y1": 0.3013157894736842,
+            "x2": 0.34598214285714285,
+            "y2": 0.35328947368421054
+          },
+          "quad": null,
+          "detection_confidence": 0.2739,
+          "ocr_confidence": 0.786,
+          "text": null,
+          "text_raw": "TOO2026",
+          "readable": false,
+          "format": "kz_machinery_square",
+          "region": "Ulytau",
+          "ocr_engine": "ppocr",
+          "ocr_variant": "raw",
+          "rectified": false,
+          "perspective_skew": null,
+          "status": "below_confidence_threshold",
+          "crop_filename": "2deb1ed90bda46ef817b07f1dbba197e-before.jpg",
+          "rectified_crop_filename": null
+        }
+      }
+    ]
+  },
+  {
+    "image_id": "742bd2f8-73fc-4472-94c4-263652e0af86",
+    "filename": "6.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "ca5d5872-5fa9-46a7-8036-4a274d208c4b",
+    "error_message": null,
+    "result_job_id": "ca5d5872-5fa9-46a7-8036-4a274d208c4b",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "4ef2a020-a25e-4f09-a764-01b70a076b14",
+        "vehicle_type": "tractor",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.7021,
+        "bbox": {
+          "x1": 0.29129464285714285,
+          "y1": 0.13815789473684212,
+          "x2": 0.4661458333333333,
+          "y2": 0.4151315789473684
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.9841,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame6_front_quarter.jpg",
+                  "similarity": 0.9841,
+                  "vehicle_type": "tractor"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame5_front.jpg",
+                  "similarity": 0.7968,
+                  "vehicle_type": "tractor"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame7_side.jpg",
+                  "similarity": 0.7967,
+                  "vehicle_type": "tractor"
+                }
+              ],
+              "similarity": 0.9841,
+              "vehicle_type": "tractor"
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "0A",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.2214,
+              "mean_confidence": 0.245
+            },
+            {
+              "text": "0A",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.2214,
+              "mean_confidence": 0.245
+            }
+          ]
+        },
+        "vehicle_confidence": 0.7021,
+        "manufacturer_confidence": null,
+        "source_label": "train",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9841,
+        "plate": {
+          "bbox": {
+            "x1": 0.39992559523809523,
+            "y1": 0.29078947368421054,
+            "x2": 0.41555059523809523,
+            "y2": 0.3118421052631579
+          },
+          "quad": [
+            [
+              0.400178,
+              0.294212
+            ],
+            [
+              0.416257,
+              0.288273
+            ],
+            [
+              0.414245,
+              0.31366
+            ],
+            [
+              0.400073,
+              0.31366
+            ]
+          ],
+          "detection_confidence": 0.8366,
+          "ocr_confidence": 0.1033,
+          "text": null,
+          "text_raw": "0A",
+          "readable": false,
+          "format": null,
+          "region": null,
+          "ocr_engine": "fast_plate_ocr",
+          "ocr_variant": "raw",
+          "rectified": false,
+          "perspective_skew": 0.303,
+          "status": "no_matching_plate_format",
+          "crop_filename": "0f21eaf26e964b1ea45b336936aac26a-before.jpg",
+          "rectified_crop_filename": "0f21eaf26e964b1ea45b336936aac26a-after.jpg"
+        }
+      },
+      {
+        "detection_id": "fc275799-911b-4d89-99a3-6014ef45f288",
+        "vehicle_type": "truck",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.4218,
+        "bbox": {
+          "x1": 0.6636904761904762,
+          "y1": 0.20328947368421052,
+          "x2": 0.7953869047619048,
+          "y2": 0.3092105263157895
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.1236,
+              "source": "reference_gallery",
+              "status": "below_similarity_floor",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame24_front_quarter.jpg",
+                  "similarity": 0.5999,
+                  "vehicle_type": "tractor"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame7_side.jpg",
+                  "similarity": 0.5109,
+                  "vehicle_type": "tractor"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame16_side.jpg",
+                  "similarity": 0.4961,
+                  "vehicle_type": "tractor"
+                }
+              ],
+              "similarity": 0.5999,
+              "vehicle_type": "tractor"
+            }
+          ]
+        },
+        "vehicle_confidence": 0.4218,
+        "manufacturer_confidence": null,
+        "source_label": "train",
+        "vehicle_type_source": "detector",
+        "vehicle_type_confidence": 0.4218,
+        "plate": null
+      }
+    ]
+  },
+  {
+    "image_id": "5d2aae7a-6fef-4fae-9ac2-dfd0cc91ce23",
+    "filename": "7.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "b168fd8f-c532-44b1-bb39-6dfa0f3ddd90",
+    "error_message": null,
+    "result_job_id": "b168fd8f-c532-44b1-bb39-6dfa0f3ddd90",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "3132e941-a28b-4a6a-aa92-86798ba4db90",
+        "vehicle_type": "truck",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.517,
+        "bbox": {
+          "x1": 0.8448660714285714,
+          "y1": 0.24473684210526317,
+          "x2": 1.0,
+          "y2": 0.3763157894736842
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": -0.0596,
+              "source": "reference_gallery",
+              "status": "below_similarity_floor",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame2_front_quarter.jpg",
+                  "similarity": 0.6145,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame13_rear.jpg",
+                  "similarity": 0.5857,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame23_front_quarter.jpg",
+                  "similarity": 0.5549,
+                  "vehicle_type": "tractor"
+                }
+              ],
+              "similarity": 0.5549,
+              "vehicle_type": "tractor"
+            }
+          ]
+        },
+        "vehicle_confidence": 0.517,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "detector",
+        "vehicle_type_confidence": 0.517,
+        "plate": null
+      },
+      {
+        "detection_id": "6e89da70-e7f9-43fc-82ed-1c222443c297",
+        "vehicle_type": "tractor",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.7979,
+        "bbox": {
+          "x1": 0.09040178571428571,
+          "y1": 0.0006578947368421052,
+          "x2": 0.4259672619047619,
+          "y2": 0.6401315789473684
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.9849,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame7_side.jpg",
+                  "similarity": 0.9849,
+                  "vehicle_type": "tractor"
+                },
+                {
+                  "source": "web",
+                  "reference": "Belarus-82_in_Korolyov__1_.jpg",
+                  "similarity": 0.8218,
+                  "vehicle_type": "tractor"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame15_front_quarter.jpg",
+                  "similarity": 0.821,
+                  "vehicle_type": "tractor"
+                }
+              ],
+              "similarity": 0.9849,
+              "vehicle_type": "tractor"
+            },
+            {
+              "text": "2026WED141617",
+              "confidence": 0.971
+            }
+          ]
+        },
+        "vehicle_confidence": 0.7979,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9849,
+        "plate": null
+      }
+    ]
+  },
+  {
+    "image_id": "dc8ebcc3-b170-4d37-a2c1-2625222a9643",
+    "filename": "8.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "82e15cac-3b5f-4b4f-b710-81f1c510c949",
+    "error_message": null,
+    "result_job_id": "82e15cac-3b5f-4b4f-b710-81f1c510c949",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "1a4be150-0af2-465d-8383-26a33da39ed4",
+        "vehicle_type": "truck_light",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.8996,
+        "bbox": {
+          "x1": 0.6510416666666666,
+          "y1": 0.11644736842105263,
+          "x2": 0.8478422619047619,
+          "y2": 0.38026315789473686
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.2854,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame8_rear.jpg",
+                  "similarity": 0.9758,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame13_rear.jpg",
+                  "similarity": 0.7538,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame14_rear.jpg",
+                  "similarity": 0.6905,
+                  "vehicle_type": "trailer"
+                }
+              ],
+              "similarity": 0.9758,
+              "vehicle_type": "truck_light"
+            },
+            {
+              "text": "597",
+              "confidence": 0.812
+            },
+            {
+              "text": "AQ10KZ",
+              "confidence": 0.91
+            },
+            {
+              "text": "597AQ10",
+              "confidence": 0.996
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "597AQ10",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.8904,
+              "mean_confidence": 0.9839
+            },
+            {
+              "text": "597AQ10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified",
+              "min_confidence": 0.8816,
+              "mean_confidence": 0.9817
+            },
+            {
+              "text": "597AO10",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.8191,
+              "mean_confidence": 0.9722
+            },
+            {
+              "text": "597AQ10",
+              "engine": "ppocr",
+              "variant": "raw",
+              "min_confidence": 0.8217,
+              "mean_confidence": 0.9051
+            },
+            {
+              "text": "597AG10",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified_clahe",
+              "min_confidence": 0.6113,
+              "mean_confidence": 0.9411
+            },
+            {
+              "text": "5928710",
+              "engine": "ppocr",
+              "variant": "rectified",
+              "min_confidence": 0.7201,
+              "mean_confidence": 0.8347
+            }
+          ]
+        },
+        "vehicle_confidence": 0.8996,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.9758,
+        "plate": {
+          "bbox": {
+            "x1": 0.6778273809523809,
+            "y1": 0.26907894736842103,
+            "x2": 0.7068452380952381,
+            "y2": 0.29078947368421054
+          },
+          "quad": [
+            [
+              0.677187,
+              0.268355
+            ],
+            [
+              0.707361,
+              0.280186
+            ],
+            [
+              0.707361,
+              0.291553
+            ],
+            [
+              0.677187,
+              0.280761
+            ]
+          ],
+          "detection_confidence": 0.8939,
+          "ocr_confidence": 0.8977,
+          "text": null,
+          "text_raw": "597AQ10",
+          "readable": false,
+          "format": null,
+          "region": null,
+          "ocr_engine": "fast_plate_ocr",
+          "ocr_variant": "raw",
+          "rectified": false,
+          "perspective_skew": 0.0874,
+          "status": "no_matching_plate_format",
+          "crop_filename": "05b28ae1080548509dc929293ebe7bce-before.jpg",
+          "rectified_crop_filename": "05b28ae1080548509dc929293ebe7bce-after.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "image_id": "fc321808-37c4-414c-b6b3-9f946d1e7776",
+    "filename": "9.jpg",
+    "width": 2688,
+    "height": 1520,
+    "annotated_available": true,
+    "status": "completed",
+    "latest_job_id": "9f5db225-f7b1-4a3d-875e-b0287107f2cf",
+    "error_message": null,
+    "result_job_id": "9f5db225-f7b1-4a3d-875e-b0287107f2cf",
+    "provider": "local",
+    "recognition_model": "local-alpr-v1",
+    "is_mock": false,
+    "detections": [
+      {
+        "detection_id": "877234f9-8b74-4484-9abd-a9dcedc9b495",
+        "vehicle_type": "trailer",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.5366,
+        "bbox": {
+          "x1": 0.109375,
+          "y1": 0.11842105263157894,
+          "x2": 0.5621279761904762,
+          "y2": 0.5763157894736842
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": 0.1014,
+              "source": "reference_gallery",
+              "status": "accepted",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame21_rear_quarter.jpg",
+                  "similarity": 0.8345,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame4_rear.jpg",
+                  "similarity": 0.7786,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame13_rear.jpg",
+                  "similarity": 0.7331,
+                  "vehicle_type": "truck_light"
+                }
+              ],
+              "similarity": 0.8345,
+              "vehicle_type": "trailer"
+            },
+            {
+              "text": "AFE",
+              "confidence": 0.995
+            },
+            {
+              "text": "P523",
+              "confidence": 0.986
+            }
+          ],
+          "plate_ocr_candidates": [
+            {
+              "text": "AFEP523",
+              "engine": "ppocr",
+              "variant": "raw",
+              "min_confidence": 0.9846,
+              "mean_confidence": 0.9884
+            },
+            {
+              "text": "52",
+              "engine": "ppocr",
+              "variant": "rectified",
+              "min_confidence": 0.9829,
+              "mean_confidence": 0.9829
+            },
+            {
+              "text": "APE523",
+              "engine": "fast_plate_ocr",
+              "variant": "raw",
+              "min_confidence": 0.2598,
+              "mean_confidence": 0.5946
+            },
+            {
+              "text": "APE523",
+              "engine": "fast_plate_ocr",
+              "variant": "rotated",
+              "min_confidence": 0.2598,
+              "mean_confidence": 0.5946
+            },
+            {
+              "text": "A55",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified_clahe",
+              "min_confidence": 0.3006,
+              "mean_confidence": 0.5525
+            },
+            {
+              "text": "A552",
+              "engine": "fast_plate_ocr",
+              "variant": "rectified",
+              "min_confidence": 0.2791,
+              "mean_confidence": 0.4858
+            }
+          ]
+        },
+        "vehicle_confidence": 0.5366,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "reference_gallery",
+        "vehicle_type_confidence": 0.8345,
+        "plate": {
+          "bbox": {
+            "x1": 0.3802083333333333,
+            "y1": 0.3888157894736842,
+            "x2": 0.41183035714285715,
+            "y2": 0.44342105263157894
+          },
+          "quad": [
+            [
+              0.377232,
+              0.383553
+            ],
+            [
+              0.421971,
+              0.383553
+            ],
+            [
+              0.405871,
+              0.432816
+            ],
+            [
+              0.377232,
+              0.442308
+            ]
+          ],
+          "detection_confidence": 0.3532,
+          "ocr_confidence": 0.7961,
+          "text": null,
+          "text_raw": "AFEP523",
+          "readable": false,
+          "format": null,
+          "region": null,
+          "ocr_engine": "ppocr",
+          "ocr_variant": "raw",
+          "rectified": false,
+          "perspective_skew": 0.519,
+          "status": "no_matching_plate_format",
+          "crop_filename": "4e6d3a5d82bc4885b68a73bb2a91e9bb-before.jpg",
+          "rectified_crop_filename": "4e6d3a5d82bc4885b68a73bb2a91e9bb-after.jpg"
+        }
+      },
+      {
+        "detection_id": "fea0e2b7-4c3a-4912-8f26-4a3832b5f4c8",
+        "vehicle_type": "truck",
+        "manufacturer": null,
+        "model": null,
+        "license_plate": null,
+        "plate_readable": false,
+        "confidence": 0.5166,
+        "bbox": {
+          "x1": 0.5933779761904762,
+          "y1": 0.2,
+          "x2": 0.6811755952380952,
+          "y2": 0.31842105263157894
+        },
+        "extra": {
+          "attribute_evidence": [
+            {
+              "margin": -0.0563,
+              "source": "reference_gallery",
+              "status": "below_similarity_floor",
+              "neighbours": [
+                {
+                  "source": "site_frames",
+                  "reference": "frame13_rear.jpg",
+                  "similarity": 0.5515,
+                  "vehicle_type": "truck_light"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame14_rear.jpg",
+                  "similarity": 0.4952,
+                  "vehicle_type": "trailer"
+                },
+                {
+                  "source": "site_frames",
+                  "reference": "frame21_rear_quarter.jpg",
+                  "similarity": 0.467,
+                  "vehicle_type": "trailer"
+                }
+              ],
+              "similarity": 0.4952,
+              "vehicle_type": "trailer"
+            }
+          ]
+        },
+        "vehicle_confidence": 0.5166,
+        "manufacturer_confidence": null,
+        "source_label": "truck",
+        "vehicle_type_source": "detector",
+        "vehicle_type_confidence": 0.5166,
+        "plate": null
+      }
+    ]
+  }
+]

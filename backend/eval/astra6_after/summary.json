@@ -1,0 +1,15 @@
+{
+  "frames": 25,
+  "readable_frames": 7,
+  "partial_frames": 8,
+  "none_legible_frames": 10,
+  "plate_localised_on_frames_with_a_plate": "15/15",
+  "exact_match_on_readable": "7/7",
+  "character_errors_on_readable": 0,
+  "abstained_on_partial": "8/8",
+  "false_accepts_on_none_legible": "0/10",
+  "manufacturer_correct": "3/10",
+  "manufacturer_wrong": 0,
+  "accepted_via_rectified_crop": 2,
+  "seconds_per_frame_mean": 10.69
+}

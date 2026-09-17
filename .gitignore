@@ -1,0 +1,20 @@
+# Secrets and local runtime data
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.venv/
+.rvenv/
+.qa-venv/
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+backend/data/
+*.log
+*.zip
+

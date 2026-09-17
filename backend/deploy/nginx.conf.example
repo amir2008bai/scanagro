@@ -1,0 +1,24 @@
+# Include inside the nginx http {} context. Replace domain and certificate paths.
+limit_req_zone $binary_remote_addr zone=fable_requests:10m rate=10r/s;
+limit_conn_zone $binary_remote_addr zone=fable_connections:10m;
+server {
+    listen 443 ssl;
+    server_name api.example.com;
+    ssl_certificate /etc/letsencrypt/live/api.example.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/api.example.com/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    client_max_body_size 100m;
+    client_body_timeout 30s;
+    limit_req zone=fable_requests burst=20 nodelay;
+    limit_req_status 429;
+    limit_conn fable_connections 10;
+    add_header Strict-Transport-Security "max-age=31536000" always;
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_connect_timeout 5s;
+        proxy_read_timeout 120s;
+        proxy_send_timeout 120s;
+    }
+}

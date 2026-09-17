@@ -1,0 +1,41 @@
+{
+  "_about": {
+    "purpose": "Hand-made reference labels for the 25 supplied frames, used by eval/evaluate.py.",
+    "method": "Each frame was inspected at full resolution, and each plate region was cropped and magnified before labelling. Labels are one person's reading of the pixels, not an official record, and they were produced before the pipeline's answers were compared against them.",
+    "independence": "Where the pipeline's own output is quoted as a hint it is marked in `notes`. No label was taken from a model's guess alone: a character is only recorded when it is legible in the source image.",
+    "categories": {
+      "readable": "Every character is legible to a human at full resolution. This is the denominator for exact-match accuracy.",
+      "partial": "A plate is clearly present and some characters are legible, but at least one is not. Not counted in exact-match; used to measure whether the system correctly abstains.",
+      "none_legible": "No plate could be read from this frame by the labeller: absent, occluded, turned away, or too small. This is not a claim that the machine has no plate."
+    },
+    "plate_country": "Kazakhstan. Region code 10 is Kostanay.",
+    "uncertain_char": "?"
+  },
+  "frames": {
+    "1":  {"category": "readable", "plate": "160 ALV 10", "vehicle": "truck", "manufacturer": "KAMAZ", "notes": "Front plate, moderate slant. KAMAZ moulding on the grille."},
+    "2":  {"category": "partial",  "plate": "691 A?? 10", "vehicle": "truck", "manufacturer": null, "notes": "Distant vehicle; digits legible, second and third letters are not."},
+    "3":  {"category": "readable", "plate": "592 LBA 10", "vehicle": "truck", "manufacturer": "KAMAZ", "notes": "KAMAZ moulding visible on the grille; a tight crop reads only the MAZ tail."},
+    "4":  {"category": "partial",  "plate": "AAH ? 10 98", "vehicle": "truck", "manufacturer": null, "notes": "Square two-row trailer/machinery plate. Tokens AAH, 10 and 98 are legible; the official row order is not confirmed, so the grouping is provisional."},
+    "5":  {"category": "none_legible", "plate": null, "vehicle": "tractor", "manufacturer": "KIROVETS", "notes": "Kirovets. Cyrillic KIROVETS lettering on the cab is not covered by the Latin OCR model. No legible plate; the yard banner OLZHAAGRO 2026 sits where a detector may fire."},
+    "6":  {"category": "none_legible", "plate": null, "vehicle": "tractor", "manufacturer": null, "notes": "MTZ-type tractor with a blue special plate; characters are not resolvable."},
+    "7":  {"category": "none_legible", "plate": null, "vehicle": "tractor", "manufacturer": null, "notes": "MTZ-type tractor; no plate legible from this angle."},
+    "8":  {"category": "partial",  "plate": "597 A?? 10", "vehicle": "truck", "manufacturer": null, "notes": "Only two letters resolve where a 2012-format plate carries three."},
+    "9":  {"category": "partial",  "plate": "AFE ? P523", "vehicle": "truck", "manufacturer": null, "notes": "Blue two-row plate. Tokens AFE and P523 are legible; layout not confirmed."},
+    "10": {"category": "readable", "plate": "124 AIX 10", "vehicle": "truck", "manufacturer": "MAZ", "notes": "MAZ cab; no legible Latin badge in frame."},
+    "11": {"category": "partial",  "plate": "302 BL? 10", "vehicle": "truck", "manufacturer": null, "notes": "Third letter not resolvable at this distance."},
+    "12": {"category": "readable", "plate": "153 AJX 10", "vehicle": "truck", "manufacturer": "MAN", "notes": "Trailer rear plate at a strong angle. MAN badge legible on the tailgate."},
+    "13": {"category": "partial",  "plate": "691 A?? 10", "vehicle": "truck", "manufacturer": null, "notes": "Same vehicle as frame 2, equally blurred."},
+    "14": {"category": "none_legible", "plate": null, "vehicle": "truck", "manufacturer": null, "notes": "Two-row plate present but too small and low-contrast to read."},
+    "15": {"category": "none_legible", "plate": null, "vehicle": "tractor", "manufacturer": "KIROVETS", "notes": "Kirovets, side-on. Plate bracket visible, characters are not."},
+    "16": {"category": "none_legible", "plate": null, "vehicle": "tractor", "manufacturer": null, "notes": "Distant tractor with trailer; no plate legible."},
+    "17": {"category": "partial",  "plate": "?45 EUA 10", "vehicle": "truck", "manufacturer": null, "notes": "Yellow rear plate. Letters and region clear; the leading digit is not resolvable."},
+    "18": {"category": "readable", "plate": "041 AHF 10", "vehicle": "truck", "manufacturer": "MAZ", "notes": "MAZ cab, front plate crisp."},
+    "19": {"category": "readable", "plate": "927 DPA 10", "vehicle": "truck", "manufacturer": "KAMAZ", "notes": "KAMAZ. Cyrillic STAYER lettering on the visor is decoration, not a manufacturer."},
+    "20": {"category": "partial",  "plate": "597 A?? 10", "vehicle": "truck", "manufacturer": null, "notes": "Same vehicle as frame 8."},
+    "21": {"category": "none_legible", "plate": null, "vehicle": "truck", "manufacturer": null, "notes": "Trailer from behind and below; no plate in view."},
+    "22": {"category": "none_legible", "plate": null, "vehicle": "truck", "manufacturer": null, "notes": "Two trailers close to the lens; no plate in view. The burnt-in timestamp is a known false-positive source here."},
+    "23": {"category": "none_legible", "plate": null, "vehicle": "tractor", "manufacturer": "KIROVETS", "notes": "Kirovets; no legible plate."},
+    "24": {"category": "none_legible", "plate": null, "vehicle": "tractor", "manufacturer": null, "notes": "Distant tractor; no legible plate."},
+    "25": {"category": "readable", "plate": "384 CBA 10", "vehicle": "truck", "manufacturer": "KAMAZ", "notes": "KAMAZ moulding legible on the grille."}
+  }
+}

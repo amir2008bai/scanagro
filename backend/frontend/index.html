@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Распознавание техники — проверка результатов</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚜</text></svg>">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">🚜</span>
+    <div>
+      <div class="title">Распознавание техники</div>
+      <div class="subtitle">проверка результатов</div>
+    </div>
+  </div>
+
+  <div class="conn">
+    <input id="apiKey" type="password" placeholder="API-ключ из .env" autocomplete="off" spellcheck="false">
+    <button id="connect" class="primary">Подключиться</button>
+    <span id="status" class="status" data-state="idle">не подключено</span>
+  </div>
+
+  <div class="topActions">
+    <a id="exportJson" class="ghost" href="#" hidden>JSON</a>
+    <a id="exportCsv" class="ghost" href="#" hidden>CSV</a>
+    <a class="ghost" href="/docs" target="_blank" rel="noopener">API</a>
+  </div>
+</header>
+
+<main id="main" hidden>
+
+  <section id="dropzone" class="dropzone" tabindex="0" role="button"
+           aria-label="Загрузить фотографии">
+    <input id="fileInput" type="file" accept="image/jpeg,image/png,image/webp" multiple hidden>
+    <div class="dzIcon">＋</div>
+    <div class="dzText">
+      <strong>Перетащите фотографии сюда</strong>
+      <span>или нажмите, чтобы выбрать · JPEG, PNG, WEBP</span>
+    </div>
+  </section>
+
+  <div id="uploadList" class="uploadList"></div>
+
+  <section class="statsRow" id="stats" hidden></section>
+
+  <section class="toolbar">
+    <input id="search" type="search" placeholder="Поиск: номер, тип, файл…" spellcheck="false">
+    <div class="filters" id="filters">
+      <button class="chip active" data-filter="all">Все</button>
+      <button class="chip" data-filter="read">Номер прочитан</button>
+      <button class="chip" data-filter="rejected">Номер отклонён</button>
+      <button class="chip" data-filter="noplate">Без номера</button>
+      <button class="chip" data-filter="guess">Тип — догадка COCO</button>
+      <button class="chip" data-filter="failed">Ошибки</button>
+    </div>
+    <button id="refresh" class="ghost" title="Обновить">⟳</button>
+  </section>
+
+  <section id="grid" class="grid"></section>
+  <div class="more"><button id="loadMore" class="ghost" hidden>Показать ещё</button></div>
+
+  <p id="empty" class="empty" hidden>Пока ничего не загружено. Перетащите фотографии выше.</p>
+</main>
+
+<section id="welcome" class="welcome">
+  <h1>Проверка результатов распознавания</h1>
+  <p>
+    Введите <code>API_KEY</code> из файла <code>.env</code> вашего сервера и нажмите
+    «Подключиться». Ключ хранится только в этом браузере и никуда не отправляется,
+    кроме вашего же API.
+  </p>
+  <p class="hint">
+    Если сервис запущен через <code>docker compose</code>, ключ лежит в
+    <code>backend/.env</code> в строке <code>API_KEY=</code>.
+  </p>
+</section>
+
+<!-- Подробный просмотр одной фотографии -->
+<div id="viewer" class="viewer" hidden>
+  <div class="viewerBar">
+    <button id="viewerClose" class="ghost" title="Закрыть (Esc)">✕</button>
+    <span id="viewerTitle" class="viewerTitle"></span>
+    <span class="spacer"></span>
+    <label class="layer"><input type="checkbox" id="layerVehicle" checked> техника</label>
+    <label class="layer"><input type="checkbox" id="layerPlate" checked> номер</label>
+    <label class="layer"><input type="checkbox" id="layerQuad" checked> углы</label>
+    <label class="layer"><input type="checkbox" id="layerLabels" checked> подписи</label>
+    <button id="prevImg" class="ghost" title="Предыдущая (←)">‹</button>
+    <button id="nextImg" class="ghost" title="Следующая (→)">›</button>
+  </div>
+
+  <div class="viewerBody">
+    <div class="stage" id="stage">
+      <img id="stageImg" alt="">
+      <svg id="overlay" preserveAspectRatio="none"></svg>
+    </div>
+    <aside class="side" id="side"></aside>
+  </div>
+</div>
+
+<div id="toast" class="toast" hidden></div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

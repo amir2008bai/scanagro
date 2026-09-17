@@ -1,0 +1,145 @@
+{
+  "detections": [
+    {
+      "vehicle_type": "trailer",
+      "manufacturer": null,
+      "model": null,
+      "license_plate": null,
+      "plate_readable": false,
+      "confidence": 0.5933,
+      "bbox": {
+        "x1": 0.06101190476190476,
+        "y1": 0.22960526315789473,
+        "x2": 0.2105654761904762,
+        "y2": 0.5144736842105263
+      },
+      "notes": null,
+      "vehicle_confidence": 0.5933,
+      "manufacturer_confidence": null,
+      "plate": {
+        "bbox": {
+          "x1": 0.109375,
+          "y1": 0.4342105263157895,
+          "x2": 0.12276785714285714,
+          "y2": 0.45592105263157895
+        },
+        "quad": [
+          [
+            0.109899,
+            0.432237
+          ],
+          [
+            0.123765,
+            0.432237
+          ],
+          [
+            0.123765,
+            0.457734
+          ],
+          [
+            0.110992,
+            0.457734
+          ]
+        ],
+        "detection_confidence": 0.9023,
+        "ocr_confidence": 0.1275,
+        "text": null,
+        "text_raw": "522505Z",
+        "readable": false,
+        "plate_format": null,
+        "region": null,
+        "ocr_engine": "fast_plate_ocr",
+        "ocr_variant": "raw",
+        "rectified": false,
+        "perspective_skew": 0.0758,
+        "status": "no_matching_plate_format",
+        "crop_filename": null,
+        "rectified_crop_filename": null,
+        "alternatives": [
+          {
+            "engine": "fast_plate_ocr",
+            "variant": "raw",
+            "text": "522505Z",
+            "mean_confidence": 0.2961,
+            "min_confidence": 0.1458
+          },
+          {
+            "engine": "fast_plate_ocr",
+            "variant": "rotated",
+            "text": "522505Z",
+            "mean_confidence": 0.2961,
+            "min_confidence": 0.1458
+          },
+          {
+            "engine": "fast_plate_ocr",
+            "variant": "rectified_clahe",
+            "text": "6621D27",
+            "mean_confidence": 0.3,
+            "min_confidence": 0.1182
+          },
+          {
+            "engine": "fast_plate_ocr",
+            "variant": "rectified",
+            "text": "65200E7",
+            "mean_confidence": 0.2962,
+            "min_confidence": 0.0962
+          }
+        ],
+        "disagreement_positions": []
+      },
+      "extra_plates": [],
+      "source_label": "truck",
+      "vehicle_type_source": "reference_gallery",
+      "vehicle_type_confidence": 0.9998,
+      "evidence": [
+        {
+          "source": "reference_gallery",
+          "vehicle_type": "trailer",
+          "similarity": 0.9998,
+          "margin": 0.4562,
+          "status": "accepted",
+          "neighbours": [
+            {
+              "reference": "frame14_rear.jpg",
+              "vehicle_type": "trailer",
+              "source": "site_frames",
+              "similarity": 0.9998
+            },
+            {
+              "reference": "frame17_rear.jpg",
+              "vehicle_type": "trailer",
+              "source": "site_frames",
+              "similarity": 0.6675
+            },
+            {
+              "reference": "frame4_rear.jpg",
+              "vehicle_type": "trailer",
+              "source": "site_frames",
+              "similarity": 0.5733
+            }
+          ]
+        },
+        {
+          "text": "AL",
+          "confidence": 0.605
+        },
+        {
+          "text": "625",
+          "confidence": 0.999
+        },
+        {
+          "text": "10",
+          "confidence": 0.978
+        },
+        {
+          "text": "625",
+          "confidence": 0.905
+        },
+        {
+          "text": "10Z",
+          "confidence": 0.588
+        }
+      ]
+    }
+  ]
+}

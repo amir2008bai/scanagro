@@ -1,0 +1,19 @@
+2026-09-17 — Windows, Python 3.12.14, PostgreSQL 16 (isolated test database)
+
+pytest -q: 126 passed in 14.24s
+ruff check .: All checks passed!
+alembic check: No new upgrade operations detected.
+alembic current: 0004_vehicle_type_provenance (head)
+fetch_models.py --check-only: 8 artifacts present and verified as configured.
+
+eval/evaluate.py: 25/25 frames before and after; exact 7/7; partial abstention 8/8;
+false accepts 0/10; character errors 0; manufacturers 3/10 correct, 0 wrong.
+Both accepted and raw plate strings unchanged on all 25 frames.
+eval/evaluate_reference.py: before 20/24 correct, 1 wrong, 3 abstained;
+after 21/24 correct, 0 wrong, 3 abstained. Same frame-out and machine-out totals.
+Real full-pipeline smoke with contextual gallery: frame 14 -> trailer,
+vehicle_type_source=reference_gallery, license_plate=null.
+
+The Docker image was not rebuilt in this follow-up. PostgreSQL ran in Docker;
+inference and application tests ran locally. No production deployment or load test.
+Previously generated demo_results describe the Opus version, not these changes.
