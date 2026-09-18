@@ -303,7 +303,7 @@ Measured on a laptop CPU (no GPU used), `VISION_MAX_PARALLEL_IMAGES=1`:
 | Per frame with `VISION_USE_PPOCR=false` | ~2-4 s, at a measurable accuracy cost |
 | Model load (once per process) | ~5 s |
 | Resident memory, steady state | ~0.6-1.0 GB |
-| Weights on disk | ~115 MB total |
+| Weights on disk | ~212 MB total (8 artefacts) |
 
 **Minimum:** 2 CPU cores, 2 GB RAM for the worker, ~1 GB disk for weights and cache. No GPU
 is required and none is assumed.

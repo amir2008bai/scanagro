@@ -211,6 +211,35 @@ def test_an_abstaining_gallery_still_records_why(monkeypatch, tmp_path):
     assert evidence[0]["status"] == "below_similarity_floor"
 
 
+def test_close_gallery_match_cannot_override_detector_and_badge():
+    from types import SimpleNamespace
+
+    from app.services.vision.local.reference_gallery import ReferenceMatch
+
+    gallery = SimpleNamespace(available=True, classify=lambda _: ReferenceMatch(
+        "trailer", .87, .05, [], "accepted"
+    ))
+    result = _pipeline_stub(gallery)._resolve_type(
+        np.zeros((32, 32, 3), np.uint8), _vehicle_box(), _Attributes("truck", .99)
+    )
+    assert result[:2] == ("truck", "badge_text")
+    assert result[3][0]["status"] == "conflict_with_detector_and_badge"
+
+
+def test_weak_badge_cannot_veto_gallery():
+    from types import SimpleNamespace
+
+    from app.services.vision.local.reference_gallery import ReferenceMatch
+
+    gallery = SimpleNamespace(available=True, classify=lambda _: ReferenceMatch(
+        "trailer", .87, .05, [], "accepted"
+    ))
+    result = _pipeline_stub(gallery)._resolve_type(
+        np.zeros((32, 32, 3), np.uint8), _vehicle_box(), _Attributes("truck", .60)
+    )
+    assert result[:2] == ("trailer", "reference_gallery")
+
+
 def test_a_broken_gallery_does_not_fail_the_image(monkeypatch, tmp_path):
     entries = [("tractor", "a.jpg", "site", unit(1, 0, 0))]
     gallery = build(monkeypatch, entries, unit(1, 0, 0), tmp_path)

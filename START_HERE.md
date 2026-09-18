@@ -22,5 +22,10 @@ python scripts/init_config.py
 docker compose up --build -d
 ```
 
-Веса (~115 МБ) скачиваются при первом старте сервисом `fetch-models` и сверяются по
+Веса (~212 МБ) скачиваются при первом старте сервисом `fetch-models` и сверяются по
 SHA-256. GPU не нужен: 2 ядра CPU и 2 ГБ RAM для worker.
+
+Интерфейс проверки: **http://localhost:8000/ui/**, ключ — из `backend/.env`.
+
+**Перед публикацией репозитория** прогоните `python backend/scripts/prepare_public_repo.py`:
+в репозитории лежит рабочая съёмка и номера текстом.

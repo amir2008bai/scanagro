@@ -37,6 +37,10 @@ jobs:
       - run: docker build -t fable-backend:test .
       # The shipped reference photos are CC BY / CC BY-SA: redistributing them without
       # the attribution file would breach their licence, so the build fails without it.
+      # The audit must run clean: it is what stands between a private repo and a public
+      # one that leaks CCTV frames. Failing here means a new sensitive path appeared.
+      - name: Public-release audit runs
+        run: python scripts/prepare_public_repo.py
       - name: Reference photos carry their attribution
         run: |
           python -c "

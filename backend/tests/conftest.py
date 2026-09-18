@@ -55,7 +55,16 @@ async def db(migrated_database):
     async with SessionLocal() as session:
         yield session
     await engine.dispose()
-    for folder in (storage.upload_dir, storage.annotated_dir):
+    # Every storage directory, not a hand-listed pair: plate crops and thumbnails are
+    # also written during tests, and leaving them behind makes one test see another's files.
+    for folder in (
+        storage.upload_dir,
+        storage.annotated_dir,
+        storage.plate_dir,
+        storage.thumb_dir,
+    ):
+        if not folder.is_dir():
+            continue
         for path in folder.iterdir():
             if path.is_file():
                 path.unlink()

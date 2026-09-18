@@ -1,0 +1,26 @@
+# docker compose -f docker-compose.yml -f docker-compose.dev.yml -f docker-compose.alpr.yml up -d --build
+x-alpr: &alpr
+  image: fable-backend:alpr
+  build:
+    context: .
+    dockerfile: Dockerfile.alpr
+  environment: &alpr-env
+    VISION_ALPR_ENABLED: "true"
+    VISION_ALPR_OCR_DIR: /data/models/alpr/en_PP-OCRv4_mobile_rec
+    VISION_ALPR_SR_PATH: /data/models/alpr/FSRCNN_x2.pb
+    VISION_LOCAL_MODEL_ID: local-alpr-paddle-v3
+
+services:
+  api:
+    <<: *alpr
+  worker:
+    <<: *alpr
+  fetch-models:
+    <<: *alpr
+    command:
+      - sh
+      - -c
+      - >-
+        python scripts/fetch_models.py --dir /data/models &&
+        python scripts/fetch_alpr_models.py --dir /data/models/alpr &&
+        python scripts/build_reference_gallery.py --dir /data/reference --seed-from reference_seed

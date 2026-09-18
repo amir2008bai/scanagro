@@ -46,6 +46,9 @@ class PipelineConfig:
     plate_frame_sweep: bool = True
     ocr_model: str = "cct-s-v2-global-model"
     use_ppocr: bool = True
+    alpr_enabled: bool = False
+    alpr_ocr_dir: Path | None = None
+    alpr_sr_path: Path | None = None
     ocr_accept_confidence: float = 0.55
     ocr_accept_confidence_unformatted: float = 0.88
     read_attributes: bool = True
@@ -88,6 +91,14 @@ class LocalRecognitionPipeline:
             config.ocr_accept_confidence,
             config.ocr_accept_confidence_unformatted,
         )
+        if config.alpr_enabled:
+            from app.services.vision.local.alpr_reader import ALPRPlateReader
+
+            if config.alpr_ocr_dir is None:
+                raise ValueError("VISION_ALPR_OCR_DIR is required when ALPR is enabled")
+            self.plate_reader = ALPRPlateReader(
+                self.plate_reader, config.alpr_ocr_dir, config.alpr_sr_path
+            )
         self.attribute_reader = AttributeReader(
             config.model_dir, config.read_attributes, cyrillic=config.cyrillic_attributes
         )
@@ -184,6 +195,21 @@ class LocalRecognitionPipeline:
                 }
                 evidence.append(entry)
                 if match.reason == "accepted":
+                    # A web photo may depict a truck AND trailer. A narrow retrieval
+                    # margin cannot override agreement between a vehicle detection
+                    # and a confidently read manufacturer badge on that vehicle.
+                    conflict = (
+                        match.vehicle_type != vehicle.vehicle_type
+                        and attributes.vehicle_type == vehicle.vehicle_type
+                        and (attributes.manufacturer_confidence or 0.0) >= 0.90
+                        and match.margin < 0.10
+                    )
+                    if conflict:
+                        entry["status"] = "conflict_with_detector_and_badge"
+                        return (
+                            attributes.vehicle_type, "badge_text",
+                            attributes.manufacturer_confidence, evidence,
+                        )
                     return match.vehicle_type, "reference_gallery", match.similarity, evidence
 
         if attributes.vehicle_type:
@@ -348,7 +374,10 @@ class LocalRecognitionPipeline:
 
         raw = {
             "provider": "local",
-            "pipeline": "rtdetr_v2_r18 + yolov9_plate + cct/ppocr",
+            "pipeline": (
+                "rtdetr_v2_r18 + yolov9_plate + paddle_alpr/cct/ppocr"
+                if self.config.alpr_enabled else "rtdetr_v2_r18 + yolov9_plate + cct/ppocr"
+            ),
             "image_size": [width, height],
             "timings_seconds": timings,
             "total_seconds": round(time.perf_counter() - started, 3),

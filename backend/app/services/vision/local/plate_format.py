@@ -59,9 +59,20 @@ class PlateFormat:
     aspect_range: tuple[float, float] = (0.4, 12.0)
     #: Layouts inferred from sample images rather than from a published specification.
     provisional: bool = False
+    #: A layout alone is not sufficient to assign a country to a numeric region.
+    kazakhstan_region: bool = True
 
 
 FORMATS: tuple[PlateFormat, ...] = (
+    PlateFormat(
+        name="letter_digits_letters_region",
+        pattern=re.compile(r"^[A-Z][0-9]{3}[A-Z]{2}[0-9]{2,3}$"),
+        breaks=(1, 4, 6),
+        description="Single line with separate numeric region: A 123 BC 45",
+        region_slice=(6, 9),
+        aspect_range=(2.2, 8.0),
+        kazakhstan_region=False,
+    ),
     PlateFormat(
         name="kz_civil_2012",
         pattern=re.compile(r"^[0-9]{3}[A-Z]{3}[0-9]{2}$"),
@@ -134,7 +145,9 @@ def classify(text: str | None, box_aspect: float | None = None) -> PlateFormat |
             continue
         if fmt.region_slice is not None:
             start, end = fmt.region_slice
-            if compact[start:end] not in REGION_CODES:
+            if fmt.kazakhstan_region and compact[start:end] not in REGION_CODES:
+                continue
+            if not fmt.kazakhstan_region and int(compact[start:end]) == 0:
                 continue
         if box_aspect is not None:
             low, high = fmt.aspect_range
@@ -165,6 +178,8 @@ def region_name(text: str | None) -> str | None:
     if fmt is None or fmt.region_slice is None:
         return None
     start, end = fmt.region_slice
+    if not fmt.kazakhstan_region:
+        return normalise(text)[start:end]
     return REGION_CODES.get(normalise(text)[start:end])
 
 

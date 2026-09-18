@@ -31,6 +31,11 @@
 
 * { box-sizing: border-box; }
 
+/* A class that sets `display` outranks the user-agent rule for [hidden], so panels and
+   buttons styled as flex would stay visible when the script hides them. One rule, first,
+   so every `element.hidden = true` in app.js actually hides. */
+[hidden] { display: none !important; }
+
 body {
   margin: 0;
   background: var(--bg);

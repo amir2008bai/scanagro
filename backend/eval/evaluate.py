@@ -67,6 +67,10 @@ def main() -> int:
     )
     parser.add_argument("--out", default=None, help="write per-frame JSON here")
     parser.add_argument("--device", default="cpu", choices=("cpu", "cuda", "auto"))
+    parser.add_argument(
+        "--alpr-ocr-dir", default=None, help="enable the paddle_alpr reader with this model dir"
+    )
+    parser.add_argument("--alpr-sr", default=None, help="FSRCNN .pb for the paddle_alpr reader")
     args = parser.parse_args()
 
     os.chdir(ROOT)
@@ -74,7 +78,14 @@ def main() -> int:
 
     model_dir = Path(args.models or os.environ.get("VISION_MODEL_DIR", "./data/models"))
     pipeline = LocalRecognitionPipeline(
-        PipelineConfig(model_dir=model_dir, device=args.device, save_plate_crops=False)
+        PipelineConfig(
+            model_dir=model_dir,
+            device=args.device,
+            save_plate_crops=False,
+            alpr_enabled=args.alpr_ocr_dir is not None,
+            alpr_ocr_dir=Path(args.alpr_ocr_dir) if args.alpr_ocr_dir else None,
+            alpr_sr_path=Path(args.alpr_sr) if args.alpr_sr else None,
+        )
     )
     pipeline.warm_up()
 

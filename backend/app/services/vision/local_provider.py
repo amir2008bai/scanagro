@@ -39,6 +39,9 @@ def build_config(settings: Settings) -> PipelineConfig:
         plate_frame_sweep=settings.vision_plate_frame_sweep,
         ocr_model=settings.vision_ocr_model,
         use_ppocr=settings.vision_use_ppocr,
+        alpr_enabled=settings.vision_alpr_enabled,
+        alpr_ocr_dir=settings.vision_alpr_ocr_dir,
+        alpr_sr_path=settings.vision_alpr_sr_path,
         ocr_accept_confidence=settings.vision_ocr_accept_confidence,
         ocr_accept_confidence_unformatted=settings.vision_ocr_accept_confidence_unformatted,
         read_attributes=settings.vision_read_attributes,
@@ -58,7 +61,7 @@ def get_pipeline(settings: Settings | None = None) -> LocalRecognitionPipeline:
     settings = settings or get_settings()
     config = build_config(settings)
     return runtime.get_or_create(
-        f"pipeline::{config.model_dir}::{config.device}",
+        f"pipeline::{config!r}",
         lambda: LocalRecognitionPipeline(config),
     )
 

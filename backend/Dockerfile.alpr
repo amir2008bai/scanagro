@@ -1,0 +1,20 @@
+# Build the existing application image first: docker compose build api
+FROM fable-backend:local
+USER root
+ENV PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK=True \
+    DISABLE_MODEL_SOURCE_CHECK=True \
+    PADDLE_HOME=/tmp/paddle \
+    PADDLE_PDX_CACHE_HOME=/tmp/paddlex \
+    HOME=/tmp
+RUN pip install --no-cache-dir paddlepaddle==3.2.2 paddleocr==3.3.2 \
+    && pip uninstall -y opencv-python opencv-python-headless opencv-contrib-python opencv-contrib-python-headless \
+    && pip install --no-cache-dir --no-deps opencv-contrib-python-headless==4.10.0.84
+RUN apt-get update && apt-get install -y --no-install-recommends libgomp1 libgl1 \
+    && rm -rf /var/lib/apt/lists/*
+# PaddleX 3.3 validates the distribution name, not just the cv2 import.
+# Keep only the required contrib distribution; no display is used at inference.
+RUN pip uninstall -y opencv-contrib-python-headless \
+    && pip install --no-cache-dir --no-deps opencv-contrib-python==4.10.0.84
+RUN python -c "import cv2, paddle; from paddleocr import TextRecognition; assert hasattr(cv2, 'dnn_superres')"
+COPY --chown=app:app . /app
+USER 10001:10001

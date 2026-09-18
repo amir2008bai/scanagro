@@ -127,6 +127,28 @@ async def get_original(
     return FileResponse(path, media_type=image.mime_type, filename=filename)
 
 
+@router.get("/{image_id}/thumbnail", response_class=FileResponse)
+async def get_thumbnail(
+    image_id: UUID, session: AsyncSession = Depends(get_session)
+) -> FileResponse:
+    """Small cached copy of the normalised image, for grids and lists."""
+    image = await session.get(ImageAsset, image_id)
+    if not image:
+        raise HTTPException(status_code=404, detail="Image not found")
+    if not storage.original_path(image.stored_filename).is_file():
+        raise HTTPException(404, "Image file is missing from storage")
+    try:
+        path = await asyncio.to_thread(storage.build_thumbnail, image.stored_filename)
+    except OSError:
+        raise HTTPException(404, "Image could not be read") from None
+    return FileResponse(
+        path,
+        media_type="image/jpeg",
+        filename=f"{image.id}-thumb.jpg",
+        headers={"Cache-Control": "private, max-age=86400"},
+    )
+
+
 @router.get("/{image_id}/annotated", response_class=FileResponse)
 async def get_annotated(
     image_id: UUID, session: AsyncSession = Depends(get_session)

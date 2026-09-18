@@ -26,6 +26,7 @@ async def cleanup(apply=False, minimum_age_hours=24):
             )
         ).all()
     referenced = {storage.original_path(row[0]) for row in rows}
+    referenced.update(storage.thumb_path(row[0]) for row in rows)
     referenced.update(storage.annotated_path(row[1]) for row in rows if row[1])
     for before, after in crops:
         for name in (before, after):
@@ -36,7 +37,7 @@ async def cleanup(apply=False, minimum_age_hours=24):
                     continue  # a name that cannot be resolved cannot be protected
     cutoff = time.time() - minimum_age_hours * 3600
     count = 0
-    for folder in (storage.upload_dir, storage.annotated_dir, storage.plate_dir):
+    for folder in (storage.upload_dir, storage.annotated_dir, storage.plate_dir, storage.thumb_dir):
         for path in folder.iterdir():
             if (
                 path.is_file()

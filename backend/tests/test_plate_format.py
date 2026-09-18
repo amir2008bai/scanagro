@@ -80,3 +80,10 @@ def test_disagreements_locate_differing_characters():
     assert plate_format.disagreements("384CBA10", "384CBA10") == []
     # Different lengths mean the engines did not agree on the character count at all.
     assert plate_format.disagreements("384CBA10", "384CBA1") == []
+
+
+@pytest.mark.parametrize("text", ["A123BC05", "X789YZ123"])
+def test_separate_numeric_region_is_not_a_kazakhstan_region(text):
+    assert plate_format.classify(text).name == "letter_digits_letters_region"
+    assert plate_format.region_name(text) == text[6:]
+    assert plate_format.classify(text[:6] + "00") is None

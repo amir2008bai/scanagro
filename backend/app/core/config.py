@@ -60,6 +60,9 @@ class Settings(BaseSettings):
     vision_ocr_model: str = Field("cct-s-v2-global-model", max_length=120)
     #: PP-OCR is slower but markedly more accurate here; it also reads body lettering.
     vision_use_ppocr: bool = True
+    vision_alpr_enabled: bool = False
+    vision_alpr_ocr_dir: Path | None = None
+    vision_alpr_sr_path: Path | None = None
     vision_ocr_accept_confidence: float = Field(0.55, ge=0.0, le=1.0)
     vision_ocr_accept_confidence_unformatted: float = Field(0.88, ge=0.0, le=1.0)
     vision_read_attributes: bool = True

@@ -1,0 +1,14 @@
+# Live-edit the review UI without rebuilding the image.
+#
+#   docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d api
+#
+# Edit anything in frontend/ and reload the browser. The mount is read-only, so the
+# container still cannot modify your working copy, and the rest of the hardening
+# (non-root user, read-only rootfs, dropped capabilities) is untouched.
+#
+# This file is for development only. Plain `docker compose up` serves the copy baked
+# into the image, which is what a deployment should run.
+services:
+  api:
+    volumes:
+      - ./frontend:/app/frontend:ro

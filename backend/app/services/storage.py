@@ -43,11 +43,14 @@ class LocalStorage:
         self.annotated_dir = self.root / "annotated"
         # Plate crops before and after perspective correction, kept as review evidence.
         self.plate_dir = self.root / "plates"
+        # Cached downscales for the review UI's grid. Derived data: safe to delete.
+        self.thumb_dir = self.root / "thumbs"
 
     def ensure_directories(self):
         self.upload_dir.mkdir(parents=True, exist_ok=True)
         self.annotated_dir.mkdir(parents=True, exist_ok=True)
         self.plate_dir.mkdir(parents=True, exist_ok=True)
+        self.thumb_dir.mkdir(parents=True, exist_ok=True)
 
     async def save_upload(self, upload: UploadFile) -> StoredImage:
         content_type = (upload.content_type or "").split(";")[0].lower()
@@ -140,6 +143,33 @@ class LocalStorage:
     def plate_path(self, plate_filename: str) -> Path:
         return self._safe_path(self.plate_dir, plate_filename)
 
+    def thumb_path(self, stored_filename: str) -> Path:
+        return self._safe_path(self.thumb_dir, stored_filename + ".thumb.jpg")
+
+    def build_thumbnail(self, stored_filename: str, max_side: int = 480) -> Path:
+        """Return a cached downscale of a stored image, creating it on first use.
+
+        The grid would otherwise pull full 2688x1520 originals — some megabytes each — to
+        fill 255 px cards. Written through a temporary name and moved into place, so a
+        concurrent request never observes a half-written JPEG.
+        """
+        target = self.thumb_path(stored_filename)
+        source = self.original_path(stored_filename)
+        if target.is_file() and target.stat().st_mtime >= source.stat().st_mtime:
+            return target
+        self.ensure_directories()
+        with Image.open(source) as image:
+            image.draft("RGB", (max_side * 2, max_side * 2))  # fast JPEG downscale on load
+            thumb = image.convert("RGB")
+            thumb.thumbnail((max_side, max_side), Image.LANCZOS)
+            temp = target.with_name(target.name + "." + uuid4().hex + ".tmp")
+            try:
+                thumb.save(temp, format="JPEG", quality=78, optimize=True)
+                os.replace(temp, target)
+            finally:
+                temp.unlink(missing_ok=True)
+        return target
+
     def remove_annotation(self, filename: str | None):
         if filename:
             self._unlink(self.annotated_path(filename))
@@ -161,3 +191,7 @@ class LocalStorage:
     def delete_image_files(self, stored_filename: str, annotated_filename: str | None) -> None:
         self._unlink(self.original_path(stored_filename))
         self.remove_annotation(annotated_filename)
+        try:
+            self._unlink(self.thumb_path(stored_filename))
+        except ValueError:
+            logger.warning("unsafe_thumb_filename")

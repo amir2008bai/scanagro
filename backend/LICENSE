@@ -1,0 +1,37 @@
+MIT License
+
+Copyright (c) 2026 scanagro contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+This licence covers the source code in this repository.
+
+It does NOT cover:
+
+* the model weights, which are downloaded at runtime from their own projects and carry
+  their own licences (Apache-2.0 and MIT). See docs/RECOGNITION.md, section
+  "Attribution", and app/services/vision/local/model_registry.py for the exact URL,
+  checksum and licence of every artefact;
+* the reference photographs under reference_seed/*/web/, which come from Wikimedia
+  Commons under CC0, public domain, CC BY or CC BY-SA. CC BY and CC BY-SA require
+  attribution: see reference_seed/SOURCES.md, which must travel with those images;
+* any photographs under reference_seed/*/site_frames/, demo_results/ or eval/, which
+  are operational CCTV footage supplied by the site operator.
